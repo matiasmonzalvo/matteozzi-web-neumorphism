@@ -32,7 +32,7 @@ const Service = () => {
       <div className="flex flex-col w-[70%] justify-center items-center">
         <h1 className='text-[10vw] leading-[1.2] text-center lg:text-[5vw] font-[800] m-0 p-0'>Nuestros Servicios</h1>
       </div>
-      <div className="w-full h-auto px-10 gap-2 lg:gap-0 lg:px-20 pb-20 mt-10 flex lg:flex-row flex-col justify-center items-center">
+      <div className="w-full h-auto px-5 gap-2 lg:gap-0 lg:px-20 pb-20 mt-10 flex lg:flex-row flex-col justify-center items-center">
         <div className="service w-full h-[95%] bg-white shadow-2xl rounded-3xl flex flex-col justify-center items-center py-5 lg:py-16" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
           <div className="text-[8vw] lg:text-[3.5vw] p-[2vw] rounded-full bg-black text-white">
             <GiCommercialAirplane />

@@ -39,7 +39,7 @@ const Team = () => {
             </div>
             <div className="w-[70%] lg:w-[70%] ml-[5vw] lg:ml-[2.5vw] text-black">
               <span className='m-0 p-0 leading-[1]'>CEO</span>
-              <h3 className='text-[2.25vw] m-0 p-0 leading-[1] font-[700]'>Emiliano Matteozzi</h3>
+              <h3 className='text-[5.5vw] lg:text-[2.25vw] m-0 p-0 leading-[1] font-[700]'>Emiliano Matteozzi</h3>
               <p className='lg:text-[1vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Team = () => {
             </div>
             <div className="w-[70%] lg:w-[70%] ml-[5vw] lg:ml-[2.5vw] text-black">
               <span className='m-0 p-0 leading-[1]'>CEO</span>
-              <h3 className='text-[2.25vw] m-0 p-0 leading-[1] font-[700]'>Cesar Matteozzi</h3>
+              <h3 className='text-[5.5vw] lg:text-[2.25vw] m-0 p-0 leading-[1] font-[700]'>Cesar Matteozzi</h3>
               <p className='lg:text-[1vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Team = () => {
             </div>
             <div className="w-[70%] lg:w-[70%] ml-[5vw] lg:ml-[2.5vw] text-black">
               <span className='m-0 p-0 leading-[1]'>CEO</span>
-              <h3 className='text-[2.25vw] m-0 p-0 leading-[1] font-[700]'>Stella Lavilla</h3>
+              <h3 className='text-[5.5vw] lg:text-[2.25vw] m-0 p-0 leading-[1] font-[700]'>Stella Lavilla</h3>
               <p className='lg:text-[1vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
             </div>
           </div>
