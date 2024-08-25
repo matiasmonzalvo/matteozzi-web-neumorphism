@@ -5,18 +5,18 @@ const Team = () => {
     const updateScrollSpeed = () => {
       const viewportWidth = window.innerWidth;
 
-      const firstElement = document.querySelector('[data-scroll-speed="2"]');
-      const secondElement = document.querySelector('[data-scroll-speed="4"]');
-      const thirdElement = document.querySelector('[data-scroll-speed="6"]');
+      const firstCard = document.querySelector('[data-scroll-speed="2"]');
+      const secondCard = document.querySelector('[data-scroll-speed="4"]');
+      const thirdCard = document.querySelector('[data-scroll-speed="6"]');
 
       if (viewportWidth < 1024) {
-        if (firstElement) firstElement.setAttribute('data-scroll-speed', '0');
-        if (secondElement) secondElement.setAttribute('data-scroll-speed', '0');
-        if (thirdElement) thirdElement.setAttribute('data-scroll-speed', '0');
+        if (firstCard) firstCard.setAttribute('data-scroll-speed', '0');
+        if (secondCard) secondCard.setAttribute('data-scroll-speed', '0');
+        if (thirdCard) thirdCard.setAttribute('data-scroll-speed', '0');
       } else {
-        if (firstElement) firstElement.setAttribute('data-scroll-speed', '2');
-        if (secondElement) secondElement.setAttribute('data-scroll-speed', '4');
-        if (thirdElement) thirdElement.setAttribute('data-scroll-speed', '6');
+        if (firstCard) firstCard.setAttribute('data-scroll-speed', '2');
+        if (secondCard) secondCard.setAttribute('data-scroll-speed', '4');
+        if (thirdCard) thirdCard.setAttribute('data-scroll-speed', '6');
       }
     };
 
