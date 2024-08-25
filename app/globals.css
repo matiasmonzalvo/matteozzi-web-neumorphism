@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  width: 100vw;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.c-scrollbar{
+  z-index: 50;
+  pointer-events: none;
+}
+
+.c-scrollbar_thumb{
+  background-color: #000;
+  opacity: 1;
+}
+
+.neu-bg{
+  background: #fff;
+}
