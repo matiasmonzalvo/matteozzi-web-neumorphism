@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className='fixed w-full z-40'>
-    <div className="max-w-full bg-[#eeeeee] shadow-lg">
+    <div className="max-w-full bg-[#f3f3f3] shadow-lg">
       <div className="flex mx-auto justify-between w-full px-20">
         <div className="flex w-full items-center justify-between my-[1.5vw]">
           <div>
@@ -29,7 +29,7 @@ const Navbar = () => {
           </div>
           {isClient && (
             <div>
-              <a href='#' className='bg-black text-white px-4 py-2 rounded-md hover:bg-teal-700 transition'>Contacto</a>
+              <a href='#' className='bg-black text-white px-4 py-2 rounded-md hover:bg-blue-500 transition'>Contacto</a>
             </div>
           )}
         </div>

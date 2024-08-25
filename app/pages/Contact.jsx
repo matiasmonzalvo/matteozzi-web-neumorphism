@@ -6,7 +6,6 @@ import Input from '../components/Input';
 
 const buttonMotionConfig = {
     whileHover: {
-        scale: 1.01,
         transition: { duration: 0.1 }
     },
     whileTap: {
@@ -81,15 +80,15 @@ export default function Contacto() {
     return (
         <section
             id="contacto"
-            className="flex justify-center w-screen h-screen items-center p-20"
+            className="flex justify-center w-screen h-auto lg:h-screen items-center lg:p-20"
             data-scroll-section
         >
-            <div className="bg-white shadow-2xl rounded-3xl py-20 px-8 w-full h-[100%] flex flex-col justify-center items-center lg:flex-row">
+            <div className="bg-white shadow-2xl rounded-3xl py-5 lg:py-28 px-8 w-[90%] h-[90%] lg:w-full lg:h-auto flex flex-col justify-center items-center lg:flex-row">
                 <div className="w-full lg:w-4/8 lg:pr-8 flex flex-col text-white mb-8 lg:mb-0">
-                    <h2 className="lg:text-[4vw] md:text-4xl font-semibold mb-4 text-black leading-[1]">
-                        Escribínos y recibí toda la información
+                    <h2 className="lg:text-[6vw]  text-[7.5vw] font-[700] mb-4 text-black leading-[1]">
+                        Te leemos
                     </h2>
-                    <p className="text-lg md:text-xl text-black">
+                    <p className="lg:text-[1.25vw] lg:w-[90%] md:text-xl text-black">
                         Nuestros horarios de atención son 24/7 por lo que
                         responderemos a tus inquietudes de inmediato. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorem laborum nemo minima porro nisi doloremque ratione sapiente. Possimus facilis autem maiores recusandae? Sunt ut pariatur quam atque. Voluptate, ipsam?
                     </p>
@@ -141,7 +140,7 @@ export default function Contacto() {
                                 <motion.button
                                     onClick={handleSubmit}
                                     {...buttonMotionConfig}
-                                    className="w-full px-8 py-3 bg-black rounded-md text-white hover:bg-teal-700 transition duration-200 ease-in-out"
+                                    className="w-full px-8 py-3 bg-black rounded-md text-white hover:bg-blue-500 transition duration-200 ease-in-out"
                                 >
                                     Enviar
                                 </motion.button>

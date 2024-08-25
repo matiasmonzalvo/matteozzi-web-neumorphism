@@ -10,7 +10,7 @@ const Hero = () => {
                 <h1 className='lg:text-5xl font-[700] m-0 p-0 leading-[1] w-[60%] text-[10vw]'>Comercio Internacional</h1>
                 <p className='mt-4 lg:text-[1.25vw] leading-[1.1] w-[100%]'>¿Estás interesado en importar-exportar o deseas una mejor alternativa para optimizar tu operativa de comercio exterior? Ya sea que estés buscando expandir tus horizontes comerciales, explorar nuevos mercados internacionales o simplemente mejorar la eficiencia y reducir costos en tus operaciones actuales, estamos acá para ayudarte.</p>
                 <div className='mt-6'>
-                    <a href='#' className='px-4 py-2 bg-black opacity-100 text-white rounded-md lg:text-[1.25vw] hover:bg-teal-700 transition duration-200 ease-in-out '>Ponete en contacto</a>
+                    <a href='#' className='px-4 py-2 bg-black opacity-100 text-white rounded-md lg:text-[1.25vw] hover:bg-blue-500 transition duration-200 ease-in-out '>Ponete en contacto</a>
                 </div>
             </div>
             <div className="lg:w-[42.75%] lg:h-full lg:absolute lg:right-0 z-[5] md:relative md:w-[100%] md:h-auto mt-[-10%] lg:mt-0">
