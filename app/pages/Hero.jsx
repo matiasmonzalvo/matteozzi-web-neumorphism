@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className='w-screen h-screen flex items-center justify-center overflow-hidden' data-scroll-section>
         
-        <div className='w-[91%] h-auto flex flex-col lg:flex-row items-center justify-start relative rounded-2xl shadow-lg sm:flex-col'>
+        <div className='w-[91%] h-auto flex flex-col lg:flex-row items-center justify-start relative rounded-2xl shadow-2xl sm:flex-col'>
             <div className="flex flex-col justify-center lg:w-[60%]  h-auto px-5 py-10 rounded-2xl z-10 neu-bg">
                 <h1 className='lg:text-5xl font-[700] m-0 p-0 leading-[1] w-[60%] text-[10vw]'>Comercio Internacional</h1>
                 <p className='mt-4 lg:text-[1.25vw] leading-[1.1] w-[100%]'>¿Estás interesado en importar-exportar o deseas una mejor alternativa para optimizar tu operativa de comercio exterior? Ya sea que estés buscando expandir tus horizontes comerciales, explorar nuevos mercados internacionales o simplemente mejorar la eficiencia y reducir costos en tus operaciones actuales, estamos acá para ayudarte.</p>
