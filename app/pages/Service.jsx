@@ -3,7 +3,7 @@ import { GiCommercialAirplane, GiTruck, GiWorld } from 'react-icons/gi';
 
 const Service = () => {
   useEffect(() => {
-    const updateScrollSpeedCards = () => {
+    const updateScrollSpeed = () => {
       const viewportWidth = window.innerWidth;
 
       const firstElement = document.querySelector('[data-scroll-speed="2"]');
@@ -18,11 +18,11 @@ const Service = () => {
       }
     };
 
-    updateScrollSpeedCards(); 
-    window.addEventListener('resize', updateScrollSpeedCards); 
+    updateScrollSpeed(); 
+    window.addEventListener('resize', updateScrollSpeed); 
 
     return () => {
-      window.removeEventListener('resize', updateScrollSpeedCards);
+      window.removeEventListener('resize', updateScrollSpeed);
     };
   }, []);
 
