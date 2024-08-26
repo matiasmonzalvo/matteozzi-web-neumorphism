@@ -3,7 +3,7 @@ import '../globals.css'
 
 const Hero = () => {
   return (
-    <section className='w-screen h-screen flex items-center justify-center overflow-hidden' data-scroll-section>
+    <section className='w-screen h-auto py-[25vw] lg:h-screen lg:py-0 flex items-center justify-center overflow-hidden' data-scroll-section>
         
         <div className='w-[90%] h-auto flex flex-col lg:flex-row items-center justify-start relative rounded-2xl shadow-2xl sm:flex-col'>
             <div className="flex flex-col justify-center lg:w-[60%]  h-auto px-5 py-10 rounded-2xl z-10 neu-bg">
