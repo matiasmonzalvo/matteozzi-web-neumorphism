@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#eeeeee] w-full shadow-lg fixed z-[40]">
-      <div className="max-w-7xl mx-auto px-10 sm:px-6 lg:px-7">
+      <div className="w-full mx-auto px-[5%] lg:px-[5%]">
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
@@ -91,12 +91,12 @@ const Navbar = () => {
 
       {/* Mobile menu, show/hide based on menu state. */}
       <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
-        <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="px-[5%] pt-2 pb-3 space-y-1">
           {menuItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block px-4 py-2 rounded-md text-base font-medium"
+              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block py-2 rounded-md text-base font-medium"
             >
               {item.name}
             </a>
