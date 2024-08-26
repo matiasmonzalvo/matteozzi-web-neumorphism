@@ -33,7 +33,7 @@ const Team = () => {
       <div className="flex flex-col w-full h-full lg:p-20 justify-center items-center lg:items-start">
         <div className="w-auto"><h1 className="text-[10vw] leading-[1.2] lg:text-[5vw] font-[800]">Nuestro Equipo</h1></div>
         <div className="flex flex-col items-center lg:items-start justify-center w-full h-[65%] lg:h-full relative gap-2 mt-10">
-          <div className="team-card w-[90%] lg:w-[55%] h-auto bg-white shadow-lg rounded-3xl lg:ml-[5vw] flex flex-row px-4 lg:px-10 items-center py-5 lg:py-4" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
+          <div className="team-card w-[90%] lg:w-[55%] h-auto bg-white shadow-2xl rounded-3xl lg:ml-[5vw] flex flex-row px-4 lg:px-10 items-center py-5 lg:py-4" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
             <div className="w-[30%] lg:w-[17.5%] h-auto overflow-hidden rounded-full shadow-xl">
               <img src="/marzorati.jpg" alt="" />
             </div>
@@ -43,7 +43,7 @@ const Team = () => {
               <p className='lg:text-[1.25vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
             </div>
           </div>
-          <div className="team-card w-[90%] lg:w-[55%] h-auto bg-white shadow-lg rounded-3xl lg:ml-[15vw] flex flex-row px-4 lg:px-10 items-center py-5 lg:py-4" data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">
+          <div className="team-card w-[90%] lg:w-[55%] h-auto bg-white shadow-2xl rounded-3xl lg:ml-[15vw] flex flex-row px-4 lg:px-10 items-center py-5 lg:py-4" data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">
             <div className="w-[30%] lg:w-[17.5%] h-auto overflow-hidden rounded-full shadow-xl">
               <img src="/matteozzi.jpg" alt=""/>
             </div>
@@ -53,7 +53,7 @@ const Team = () => {
               <p className='lg:text-[1.25vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
             </div>
           </div>
-          <div className="team-card w-[90%] lg:w-[55%] h-auto bg-white shadow-lg rounded-3xl lg:ml-[25vw] flex flex-row px-4 lg:px-10 items-center py-5 lg:py-4" data-scroll data-scroll-speed="6" data-scroll-direction="horizontal">
+          <div className="team-card w-[90%] lg:w-[55%] h-auto bg-white shadow-2xl rounded-3xl lg:ml-[25vw] flex flex-row px-4 lg:px-10 items-center py-5 lg:py-4" data-scroll data-scroll-speed="6" data-scroll-direction="horizontal">
             <div className="w-[30%] lg:w-[17.5%] h-auto overflow-hidden rounded-full shadow-xl">
               <img src="/monzalvo.jpg" alt="" />
             </div>

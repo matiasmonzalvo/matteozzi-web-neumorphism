@@ -40,7 +40,7 @@ const Service = () => {
           <h2 className='mt-5 lg:mt-[1.5vw] text-[6vw] lg:text-[2.25vw] w-[80%] text-black font-[800] text-center leading-[1]'>Despachante de aduana</h2>
           <p className='w-[90%] text-center lg:text-[1.25vw] font-[400] text-black mt-4 lg:mt-[1.5vw] leading-[1.3]'>Ofrecemos despachos de importación, permisos de embarque, importaciones y exportaciones temporales, actividades bancarias, obtención de regímenes especiales, gestiones ante organismos oficiales, permisos de embarque para exportación, y asesoramiento en el área bancaria.</p>
         </div>
-        <div className="service w-full h-full bg-white shadow-2xl rounded-3xl lg:z-20 relative flex flex-col justify-center items-center py-5 lg:py-16" data-scroll>
+        <div className="service w-full h-full bg-white shadow-2xl rounded-3xl lg:z-20 relative flex flex-col justify-center items-center py-5 lg:py-14" data-scroll>
           <div className="text-[8vw] lg:text-[3.5vw] p-[2vw] rounded-full bg-black text-white">
             <GiTruck />
           </div>

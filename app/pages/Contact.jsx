@@ -140,7 +140,7 @@ export default function Contacto() {
                                 <motion.button
                                     onClick={handleSubmit}
                                     {...buttonMotionConfig}
-                                    className="w-full px-8 py-3 bg-black rounded-md text-white hover:bg-blue-500 transition duration-200 ease-in-out"
+                                    className="w-full px-8 py-3 bg-black rounded-md text-white hover:bg-blue-500 transition duration-200 ease-in-out shadow-md"
                                 >
                                     Enviar
                                 </motion.button>
