@@ -3,7 +3,7 @@ import '../globals.css'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#eeeeee] rounded-lg mt-16 lg:mt-4 mx-6 lg:mx-20" data-scroll-section>
+    <footer className="bg-[#eeeeee] rounded-lg mt-16 lg:mt-20 mx-6 lg:mx-20" data-scroll-section>
       <div className="flex flex-col lg:flex-row justify-between lg:items-center items-start bg-white shadow-2xl rounded-t-2xl overflow-hidden px-5 lg:px-20 pt-10 pb-14">
         <div className="w-full lg:w-[40%] flex flex-col items-start justify-center">
           <h2 className="text-[10vw] lg:text-[5vw] font-bold leading-[1]">Matteozzi<br/>Lavilla</h2>

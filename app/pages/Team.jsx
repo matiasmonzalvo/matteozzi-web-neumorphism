@@ -29,7 +29,7 @@ const Team = () => {
   }, []);
 
   return (
-      <section className='w-screen h-auto pt-20 pb-40 lg:h-auto flex items-center justify-center' data-scroll-section>
+      <section className='w-screen h-auto pt-20 lg:pt-0 pb-40 lg:pb-10 lg:h-auto flex items-center justify-center' data-scroll-section>
       <div className="flex flex-col w-full h-full lg:p-20 justify-center items-center lg:items-start">
         <div className="w-auto"><h1 className="text-[10vw] leading-[1.2] lg:text-[5vw] font-[800]">Nuestro Equipo</h1></div>
         <div className="flex flex-col items-center lg:items-start justify-center w-full h-[65%] lg:h-full relative gap-2 mt-10">
@@ -40,7 +40,7 @@ const Team = () => {
             <div className="w-[70%] lg:w-[70%] ml-[5vw] lg:ml-[2.5vw] text-black">
               <span className='m-0 p-0 leading-[1]'>CEO</span>
               <h3 className='text-[5.5vw] lg:text-[2.25vw] m-0 p-0 leading-[1] font-[700]'>Emiliano Matteozzi</h3>
-              <p className='lg:text-[1vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
+              <p className='lg:text-[1.25vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
             </div>
           </div>
           <div className="team-card w-[90%] lg:w-[55%] h-auto bg-white shadow-lg rounded-3xl lg:ml-[15vw] flex flex-row px-4 lg:px-10 items-center py-5 lg:py-4" data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">
@@ -50,7 +50,7 @@ const Team = () => {
             <div className="w-[70%] lg:w-[70%] ml-[5vw] lg:ml-[2.5vw] text-black">
               <span className='m-0 p-0 leading-[1]'>CEO</span>
               <h3 className='text-[5.5vw] lg:text-[2.25vw] m-0 p-0 leading-[1] font-[700]'>Cesar Matteozzi</h3>
-              <p className='lg:text-[1vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
+              <p className='lg:text-[1.25vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
             </div>
           </div>
           <div className="team-card w-[90%] lg:w-[55%] h-auto bg-white shadow-lg rounded-3xl lg:ml-[25vw] flex flex-row px-4 lg:px-10 items-center py-5 lg:py-4" data-scroll data-scroll-speed="6" data-scroll-direction="horizontal">
@@ -60,7 +60,7 @@ const Team = () => {
             <div className="w-[70%] lg:w-[70%] ml-[5vw] lg:ml-[2.5vw] text-black">
               <span className='m-0 p-0 leading-[1]'>CEO</span>
               <h3 className='text-[5.5vw] lg:text-[2.25vw] m-0 p-0 leading-[1] font-[700]'>Stella Lavilla</h3>
-              <p className='lg:text-[1vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
+              <p className='lg:text-[1.25vw] font-[400] mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur libero aliquid non velit possimus fuga architecto necessitatibus, expedita eos quas!</p>
             </div>
           </div>
         </div>

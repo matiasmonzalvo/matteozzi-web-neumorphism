@@ -83,7 +83,7 @@ export default function Contacto() {
             className="flex justify-center w-screen h-auto lg:h-screen items-center lg:p-20"
             data-scroll-section
         >
-            <div className="bg-white shadow-2xl rounded-3xl py-5 lg:py-28 px-8 w-[90%] h-[90%] lg:w-full lg:h-auto flex flex-col justify-center items-center lg:flex-row">
+            <div className="bg-white shadow-2xl rounded-3xl py-5 lg:py-20 px-8 w-[90%] h-[90%] lg:w-full lg:h-auto flex flex-col justify-center items-center lg:flex-row">
                 <div className="w-full lg:w-4/8 lg:pr-8 flex flex-col text-white mb-8 lg:mb-0">
                     <h2 className="lg:text-[6vw]  text-[7.5vw] font-[700] mb-4 text-black leading-[1]">
                         Te leemos
