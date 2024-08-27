@@ -39,7 +39,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex lg:items-center">
-            <button className="bg-black hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-md transition">
+            <button className="bg-black hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-md transition">
               Contáctanos
             </button>
           </div>

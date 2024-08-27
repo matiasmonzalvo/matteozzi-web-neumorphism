@@ -10,23 +10,23 @@ const Footer = () => {
           <h2 className="text-[10vw] lg:text-[5vw] font-bold leading-[1]">Matteozzi<br/>Lavilla</h2>
           <span className="text-[4vw] lg:text-[1vw] text-black opacity-80 mt-[2vw] sm:text-center">© 2024 Matteozzi Lavilla.<br/>All Rights Reserved.</span>
         </div>
-        <div className="flex flex-col items-start w-auto justify-center gap-2">
+        <div className="flex flex-col items-start w-auto justify-center gap-0 lg:gap-2 mt-10 lg:mt-0">
           <div className="text-gray-700 font-sans text-base leading-relaxed">
             <div className="flex items-center mb-2">
               <FaEnvelope className="mr-2 text-black" />
-              <span className='text-xl'>info@matteozzi-lavilla.com.ar</span>
+              <span className='lg:text-xl'>info@matteozzi-lavilla.com.ar</span>
             </div>
             <div className="flex items-center mb-2">
               <FaPhone className="mr-2 text-black" />
-              <span className='text-xl'>54-2944-422066</span>
+              <span className='lg:text-xl'>54-2944-422066</span>
             </div>
             <div className="flex items-center mb-2">
               <FaMapMarkerAlt className="mr-2 text-black" />
-              <span className='text-xl'>San Carlos de Bariloche, Río Negro, Argentina (8400)</span>
+              <span className='lg:text-xl'>San Carlos de Bariloche, Río Negro, Argentina (8400)</span>
             </div>
             <div className="flex items-center">
               <FaBuilding className="mr-2 text-black" />
-              <span className='text-xl'>Mitre 125, 1er Piso, Oficinas 124-125</span>
+              <span className='lg:text-xl'>Mitre 125, 1er Piso, Oficinas 124-125</span>
             </div>
           </div>
           <div className="flex flex-row gap-1 text-[6vw] font-[600] lg:text-[1.5vw] mt-10">
