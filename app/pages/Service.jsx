@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { GiCommercialAirplane, GiTruck, GiWorld } from 'react-icons/gi';
 
+
 const Service = () => {
   useEffect(() => {
     const updateScrollSpeed = () => {
