@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import '../globals.css'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,12 +13,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#eeeeee] w-full shadow-lg fixed z-[40]">
-      <div className="w-full mx-auto px-[5%] lg:px-[5%]">
+    <nav className="bg-transparent w-full py-6 fixed z-[40]">
+      <div className="w-[90%] mx-auto px-6 rounded-xl glass">
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="/" className="font-bold text-xl leading-tight">
+            <a href="/" className="font-bold text-xl leading-tight text-white">
               Matteozzi
               <br />
               <span className="text-lg">Lavilla</span>
@@ -30,7 +31,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md lg:text-[1vw] text-sm font-medium"
+                className=" text-white hover:text-gray-900 px-3 py-2 rounded-md lg:text-[1vw] text-sm font-normal"
               >
                 {item.name}
               </a>
@@ -39,8 +40,9 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex lg:items-center">
-            <button className="bg-black hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-md transition">
-              Contáctanos
+            <button className="bg-black hover:bg-blue-500 text-white flex items-center font-medium py-2 px-4 rounded-lg transition">
+              <div className='mr-2 mt-[1px] w-2 h-2 rounded-full bg-green-400'></div>
+              <span>Contactanos</span>
             </button>
           </div>
 
