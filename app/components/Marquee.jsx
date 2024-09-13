@@ -21,7 +21,7 @@ export default function Marquee() {
     gsap.to(marqueeInner, {
       x: '-39.65%',
       ease: 'none',
-      duration: 40,
+      duration: 20,
       repeat: -1,
     })
 
