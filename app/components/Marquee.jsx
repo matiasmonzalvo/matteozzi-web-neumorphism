@@ -19,9 +19,9 @@ export default function Marquee() {
     marqueeInner.innerHTML = marqueeContent + marqueeContent
 
     gsap.to(marqueeInner, {
-      x: '-100%',
+      x: '-39.65%',
       ease: 'none',
-      duration: 60,
+      duration: 40,
       repeat: -1,
     })
 
