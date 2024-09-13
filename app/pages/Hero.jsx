@@ -1,6 +1,7 @@
 import React from 'react'
 import '../globals.css'
 import Image from 'next/image'
+import Marquee from '../components/Marquee'
 
 const Hero = () => {
   return (
@@ -29,6 +30,7 @@ const Hero = () => {
                 </div>
             </div>
         </div>
+        <Marquee/>
     </section>
   )
 }
