@@ -2,15 +2,16 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className='w-screen h-auto lg:h-screen flex items-center overflow-hidden justify-center pt-10 pb-[80vw] lg:pb-0 lg:pt-32' data-scroll-section>
-        <div className="w-full h-full">
-            <div className='w-full h-[60%] relative flex flex-row justify-center gap-4 px-5 sm:px-10 md:px-20'>
-                <img src="/hero2.jpg" className='flex-1 h-auto rounded-2xl shadow-2xl' alt=""  data-scroll data-scroll-speed="6"/>
-                <img src="/hero3.jpg" className='flex-1 h-auto rounded-2xl shadow-2xl' alt=""  data-scroll data-scroll-speed="4"/>
-                <div className="absolute top-[40%] lg:top-[30%] left-[15%] lg:left-[30%] w-[70%] lg:w-[36.5%] h-auto px-5 pt-5 pb-10 bg-white rounded-3xl shadow-2xl  " data-scroll data-scroll-speed="2">
-                  <h1 className='text-black text-[10vw] font-[700] lg:text-[5vw] lg:font-[800] m-0 p-0 leading[1]'>Nosotros</h1>
-                  <p className='text-black text-[4vw] lg:text-[1.25vw] font-[400] leading-[1.2]'>Somos una empresa integral en comercio internacional, ofreciendo consultoría, despacho aduanero, y transporte, con tecnología moderna y personal experimentado. Ubicados en San Carlos de Bariloche, contamos con una red nacional e internacional, brindando servicios de excelencia mediante sistemas informáticos avanzados y conectividad constante.</p>
-                </div>
+    <section className='w-screen h-auto lg:h-screen flex items-center overflow-hidden justify-center' data-scroll-section>
+        <div className="w-full h-full flex items-center justify-center">
+            <div className='w-[90%] h-[70%] relative flex flex-row justify-start px-0'>
+              <div className='w-full flex relative flex-col'>
+                <h1 className='lg:text-[6vw] font-[700] m-0 p-0 leading-[1] text-black w-[100%] text-left'>¿Quienes Somos?</h1>
+                <p className='mt-4 lg:text-[1.25vw] leading-[1.1] w-[70%] text-gray-950'>Somos una empresa integral en el ámbito del comercio internacional, ofreciendo servicios de consultoría, despacho de aduanas y transporte aduanero. Contamos con una estructura completa y ágil, personal experimentado, tecnología moderna y profundo conocimiento de las relaciones económicas internacionales. Somos un eslabón esencial en la economía moderna, proporcionando una colaboración indispensable para la industria y el comercio.</p>
+              </div>
+              <div className='w-1/2 flex relative'>
+                
+              </div>
             </div>
         </div>
     </section>
