@@ -29,31 +29,16 @@ const Service = () => {
   }, []);
 
   return (
-    <section className='w-screen h-auto flex flex-col items-center justify-center' data-scroll-section>
-      <div className="flex flex-col w-[70%] justify-center items-center">
-        <h1 className='text-[10vw] leading-[1.2] text-center lg:text-[6vw] font-[700] m-0 p-0'>Nuestros Servicios</h1>
-      </div>
-      <div className="w-full h-auto px-5 gap-2 lg:gap-0 lg:px-20 pb-20 mt-10 flex lg:flex-row flex-col justify-center items-center">
-        <div className="service w-full glass-card rounded-3xl flex flex-col justify-center items-center py-5 lg:py-14" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
-          <div className="text-[8vw] lg:text-[2.75vw] p-[1.5vw] rounded-full bg-white text-neutral-500">
-            <GiCommercialAirplane />
-          </div>
-          <h2 className='mt-5 lg:mt-[1.5vw] text-[6vw] lg:text-[2.25vw] w-[80%] font-[800] text-center leading-[1]'>Despachante de aduana</h2>
-          <p className='w-[90%] text-center lg:text-[1.25vw] font-[400] mt-4 lg:mt-[1.5vw] leading-[1.3]'>Ofrecemos despachos de importación, permisos de embarque, importaciones y exportaciones temporales, actividades bancarias, obtención de regímenes especiales, gestiones ante organismos oficiales, permisos de embarque para exportación, y asesoramiento en el área bancaria.</p>
+    <section className='w-screen h-screen flex flex-row items-center justify-center' data-scroll-section>
+      <div className='flex flex-row items-center justify-center w-[90%] h-full'>
+        <div className="flex flex-col w-5/12 justify-center items-start bg-red-500">
+          <h1 className='text-[10vw] leading-[1] lg:text-4xl w-[100%] font-[700] m-0 p-0'>Explora los servicios que ofrecemos para vos.</h1>
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus iure sit iste nostrum fugit cupiditate numquam placeat dignissimos non? Similique exercitationem magnam repellat, iste libero quas aspernatur dicta cupiditate.</span>
         </div>
-        <div className="service w-full h-full glass-card rounded-3xl lg:z-20 relative flex flex-col justify-center items-center py-5 lg:py-14" data-scroll>
-          <div className="text-[8vw] lg:text-[2.75vw] p-[1.5vw] rounded-full bg-white text-neutral-500">
-            <GiTruck />
+        <div className='w-7/12 h-full bg-blue-500 flex items-center justify-center px-32'>
+          <div className='w-full h-[60%] bg-green-400'>
+
           </div>
-          <h2 className='mt-5 lg:mt-[1.5vw] text-[6vw] lg:text-[2.25vw] w-[90%] font-[800] text-center leading-[1]'>Agentes de transporte aduanero</h2>
-          <p className='w-[90%] text-center lg:text-[1.25vw] font-[400] mt-4 lg:mt-[1.5vw] leading-[1.3]'>Ofrecemos trasbordos, seguros y fletes nacionales e internacionales, tránsitos terrestres y aéreos, reembarcos, permisos de transporte, y coordinación de embarques. También brindamos atención personalizada, confección de documentos de carga, gestión de vuelos internacionales en el Aeropuerto de S.C. de Bariloche, logística internacional multimodal y servicios de estiba.</p>
-        </div>
-        <div className="service w-full glass-card rounded-3xl flex flex-col justify-center items-center py-5 lg:py-14" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">
-          <div className="text-[8vw] lg:text-[2.75vw] p-[1.5vw] rounded-full bg-white text-neutral-500">
-            <GiWorld />
-          </div>
-          <h2 className='mt-5 lg:mt-[1.5vw] text-[6vw] lg:text-[2.25vw] w-[90%] font-[800] text-center leading-[1]'>Consultoría en comercio internacional</h2>
-          <p className='w-[90%] text-center lg:text-[1.25vw] font-[400] mt-4 lg:mt-[1.5vw] leading-[1.3]'>Ofrecemos asesoría integral en comercio internacional, incluyendo análisis de costos, documentación, medios de pago, y asesoría legal aduanera. También gestionamos inscripciones para importadores y exportadores, y brindamos apoyo en regímenes promocionales y clasificaciones arancelarias.</p>
         </div>
       </div>
     </section>
