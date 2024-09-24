@@ -23,22 +23,24 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Desktop menu */}
+          {/* Desktop menu centrado */}
           <div className="hidden lg:flex lg:items-center lg:justify-center flex-1">
-            {menuItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className=" text-white hover:text-blue-500 px-3 py-2 rounded-md lg:text-[0.80vw] text-sm font-normal"
-              >
-                {item.name}
-              </a>
-            ))}
+            <div className="flex justify-center space-x-8">
+              {menuItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-white hover:text-blue-500 px-3 py-2 rounded-md lg:text-[0.80vw] text-sm font-normal"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* CTA Button */}
           <div className="hidden lg:flex lg:items-center">
-            <button className=" hover:bg-blue-500 text-white flex items-center font-medium py-1.5 px-4 rounded-lg transition text-[0.80vw]">
+            <button className="hover:bg-blue-500 text-white flex items-center font-medium py-1.5 px-4 rounded-lg transition text-[0.80vw]">
               <div className="mr-2 mt-[1px] w-2 h-2 rounded-full bg-green-400"></div>
               <span>Contactanos</span>
             </button>
