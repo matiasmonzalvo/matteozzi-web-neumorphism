@@ -1,27 +1,25 @@
-"use client";
+'use client';
 import React, { useState } from 'react';
-import '../globals.css'
+import '../globals.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: "Inicio", href: "/" },
-    { name: "Nosotros", href: "/nosotros" },
-    { name: "Servicios", href: "/servicios" },
-    { name: "Equipo", href: "/equipo" },
+    { name: 'Inicio', href: '/' },
+    { name: 'Nosotros', href: '/nosotros' },
+    { name: 'Servicios', href: '/servicios' },
+    { name: 'Equipo', href: '/equipo' }
   ];
 
   return (
     <nav className="bg-transparent w-full py-6 fixed z-[40]">
       <div className="w-[90%] mx-auto px-6 rounded-xl glass">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-12">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <a href="/" className="font-bold text-xl leading-tight text-white">
-              Matteozzi
-              <br />
-              <span className="text-lg">Lavilla</span>
+              ML
             </a>
           </div>
 
@@ -31,7 +29,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className=" text-white hover:text-gray-900 px-3 py-2 rounded-md lg:text-[1vw] text-sm font-normal"
+                className=" text-white hover:text-blue-500 px-3 py-2 rounded-md lg:text-[0.80vw] text-sm font-normal"
               >
                 {item.name}
               </a>
@@ -40,8 +38,8 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex lg:items-center">
-            <button className="bg-black hover:bg-blue-500 text-white flex items-center font-medium py-2 px-4 rounded-lg transition">
-              <div className='mr-2 mt-[1px] w-2 h-2 rounded-full bg-green-400'></div>
+            <button className=" hover:bg-blue-500 text-white flex items-center font-medium py-1.5 px-4 rounded-lg transition text-[0.80vw]">
+              <div className="mr-2 mt-[1px] w-2 h-2 rounded-full bg-green-400"></div>
               <span>Contactanos</span>
             </button>
           </div>
