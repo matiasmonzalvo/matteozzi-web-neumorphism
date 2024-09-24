@@ -1,8 +1,8 @@
 'use client';
-import React, { useState } from 'react';
-import '../globals.css';
 
-const Navbar = () => {
+import React, { useState } from 'react';
+
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
@@ -14,23 +14,23 @@ const Navbar = () => {
 
   return (
     <nav className="bg-transparent w-full py-6 fixed z-[40]">
-      <div className="w-[90%] mx-auto px-6 rounded-xl glass">
-        <div className="flex justify-between h-12">
+      <div className="w-[90%] mx-auto px-6 rounded-xl glass relative">
+        <div className="flex items-center justify-between h-12">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center">
+          <div className="flex-shrink-0">
             <a href="/" className="font-bold text-xl leading-tight text-white">
               ML
             </a>
           </div>
 
-          {/* Desktop menu centrado */}
-          <div className="hidden lg:flex lg:items-center lg:justify-center flex-1">
-            <div className="flex justify-center space-x-8">
+          {/* Desktop menu centrado en el medio del div */}
+          <div className="hidden lg:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="flex space-x-2">
               {menuItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-blue-500 px-3 py-2 rounded-md lg:text-[0.80vw] text-sm font-normal"
+                  className="text-white hover:text-blue-500 px-3 py-2 rounded-md text-[0.80vw] font-normal transition-colors duration-200"
                 >
                   {item.name}
                 </a>
@@ -39,10 +39,10 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:flex lg:items-center">
-            <button className="hover:bg-blue-500 text-white flex items-center font-medium py-1.5 px-4 rounded-lg transition text-[0.80vw]">
-              <div className="mr-2 mt-[1px] w-2 h-2 rounded-full bg-green-400"></div>
-              <span>Contactanos</span>
+          <div className="hidden lg:flex">
+            <button className="hover:bg-blue-500 text-white flex items-center font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-[0.80vw]">
+              <div className="mr-2 w-2 h-2 rounded-full bg-green-400"></div>
+              <span>Contáctanos</span>
             </button>
           </div>
 
@@ -50,66 +50,65 @@ const Navbar = () => {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
-              aria-expanded="false"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-blue-500 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
+              aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Abrir menú principal</span>
-              {/* Icon when menu is closed. */}
-              <svg
-                className={`${isMenuOpen ? 'hidden' : 'block'} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-              {/* Icon when menu is open. */}
-              <svg
-                className={`${isMenuOpen ? 'block' : 'hidden'} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              {isMenuOpen ? (
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile menu, show/hide based on menu state. */}
-      <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden`}>
-        <div className="px-[5%] pt-2 pb-3 space-y-1">
+      {/* Mobile menu */}
+      <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden mt-2`}>
+        <div className="w-[90%] mx-auto rounded-xl glass overflow-hidden shadow-lg">
           {menuItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-gray-700 hover:bg-gray-100 hover:text-gray-900 block py-2 rounded-md text-base font-medium"
+              className="block px-4 py-3 text-white hover:bg-white/10 hover:text-blue-500 transition-colors duration-200 text-sm font-medium"
             >
               {item.name}
             </a>
           ))}
-          <button className="w-full text-center bg-black hover:bg-blue-500 transition text-white font-bold py-2 px-4 rounded mt-4">
-            Contáctanos
-          </button>
+          <div className="px-4 py-3">
+            <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-sm">
+              Contáctanos
+            </button>
+          </div>
         </div>
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}

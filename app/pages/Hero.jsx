@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="mt-2 flex flex-col sm:flex-row items-center justify-center">
           <a
             href="#"
-            className="px-4 py-2 rounded-xl border-2 border-gray-300 text-white lg:text-lg text-base hover:bg-gray-300 hover:text-black"
+            className="px-4 py-2 rounded-xl border border-gray-300 text-white lg:text-lg text-base hover:bg-gray-300 hover:text-black transition duration-300"
           >
             Contactar
           </a>
