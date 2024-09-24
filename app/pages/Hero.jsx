@@ -1,7 +1,7 @@
-import React from 'react'
-import '../globals.css'
-import Image from 'next/image'
-import Marquee from "react-fast-marquee";
+import React from 'react';
+import '../globals.css';
+import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
 
 const Hero = () => {
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
       {/* Contenido central */}
       <div className="w-[90%] h-auto my-auto flex flex-col items-center justify-center relative px-5 lg:px-32 z-10 rounded-2xl text-center gap-4">
         <div className="w-[80%]">
-          <h1 className="lg:text-[5vw] text-[10vw] leading-[0.9] font-semibold bg-gradient-to-br from-white to-gray-400 text-transparent bg-clip-text">
+          <h1 className="lg:text-[5vw] text-[10vw] leading-[0.9] font-semibold bg-gradient-to-br from-white via-white to-gray-400 text-transparent bg-clip-text">
             Tu socio confiable para un éxito sin fronteras.
           </h1>
         </div>
@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="mt-2 flex flex-col sm:flex-row items-center justify-center">
           <a
             href="#"
-            className="px-4 py-2 rounded-xl border-2 border-gray-400 text-white lg:text-lg text-base hover:bg-gray-200 hover:text-black"
+            className="px-4 py-2 rounded-xl border-2 border-gray-300 text-white lg:text-lg text-base hover:bg-gray-300 hover:text-black"
           >
             Contactar
           </a>
@@ -100,9 +100,9 @@ const Hero = () => {
             alt="LAN"
           />
         </Marquee>
-        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
