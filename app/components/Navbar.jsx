@@ -40,7 +40,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex">
-            <button className="hover:bg-blue-500 text-white flex items-center font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-[0.80vw]">
+            <button className="hover:bg-blue-500 text-white flex items-center font-medium py-1.5 px-4 rounded-xl transition-colors duration-200 text-[0.80vw]">
               <div className="mr-2 w-2 h-2 rounded-full bg-green-400"></div>
               <span>Contáctanos</span>
             </button>
