@@ -6,7 +6,7 @@ import Marquee from 'react-fast-marquee';
 const Hero = () => {
   return (
     <section
-      className="w-screen h-auto sm:h-auto sm:py-[10vw] py-[30vw] lg:h-screen lg:py-0 relative flex items-center justify-center overflow-hidden"
+      className="w-screen h-screen sm:py-[10vw] py-[30vw]  lg:py-0 relative flex items-center justify-center overflow-hidden"
       data-scroll-section
     >
       <div className="w-full h-full absolute top-0 left-0 filter-shadow z-10"></div>
@@ -16,7 +16,7 @@ const Hero = () => {
           alt="Hero image"
           width={1920}
           height={1080}
-          className="w-full h-auto object-cover"
+          className="w-full h-screen object-cover"
           sizes="100vw"
           priority
           data-scroll
@@ -26,17 +26,13 @@ const Hero = () => {
 
       {/* Contenido central */}
       <div className="w-[90%] h-auto my-auto flex flex-col items-center justify-center relative px-5 lg:px-32 z-10 rounded-2xl text-center gap-4">
-        <div className="w-[80%]">
-          <h1 className="lg:text-[5vw] text-[10vw] leading-[0.9] font-semibold bg-gradient-to-br from-white via-white to-gray-400 text-transparent bg-clip-text">
-            Tu socio confiable para un éxito sin fronteras.
-          </h1>
-        </div>
-        <div className="w-[45%]">
-          <p className="lg:text-[1vw] text-[4vw] leading-[1.3] text-gray-200 tracking-wide">
-            Simplificamos el comercio internacional a través de servicios
-            aduaneros, logísticos y asesoría estratégica.
-          </p>
-        </div>
+        <h1 className="lg:w-[80%] mx-auto text-[8.5vw] md:text-[5vw] leading-[0.9] font-semibold bg-gradient-to-br from-white via-white to-gray-400 text-transparent bg-clip-text">
+          Tu socio confiable para un éxito sin fronteras.
+        </h1>
+        <p className="md:w-[45%] mx-auto text-[3.5vw] md:text-[1vw] leading-[1.3] text-gray-200 tracking-wide">
+          Simplificamos el comercio internacional a través de servicios
+          aduaneros, logísticos y asesoría estratégica.
+        </p>
         <div className="mt-2 flex flex-col sm:flex-row items-center justify-center">
           <a
             href="#"
