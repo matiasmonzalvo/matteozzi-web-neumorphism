@@ -1,28 +1,56 @@
 import React, { useEffect } from 'react';
-import { FaPlane, FaPlaneDeparture } from 'react-icons/fa';
-import { GiAlliedStar, GiCommercialAirplane, GiTruck, GiWorld } from 'react-icons/gi';
+import {
+  GiCommercialAirplane,
+  GiTruck,
+  GiWorld,
+  GiAlliedStar
+} from 'react-icons/gi';
 
+const serviceItems = [
+  {
+    icon: GiCommercialAirplane,
+    title: 'Despachante de Aduana',
+    description:
+      'Ofrecemos servicios en despachos de importación, permisos de embarque, importaciones y exportaciones temporales, actividades bancarias, obtención de regímenes especiales, gestiones ante organismos oficiales, permisos de embarque para exportación, y asesoramiento en el área bancaria.'
+  },
+  {
+    icon: GiTruck,
+    title: 'Agentes de Transporte Aduanero',
+    description:
+      'Ofrecemos servicios de Agente de Transporte Aduanero: trasbordos, seguros y fletes nacionales e internacionales, tránsitos terrestres y aéreos, reembarcos, permisos de transporte, y coordinación de embarques. También brindamos atención personalizada, confección de documentos de carga, gestión de vuelos internacionales en el Aeropuerto de S.C. de Bariloche, logística internacional multimodal y servicios de estiba.'
+  },
+  {
+    icon: GiWorld,
+    title: 'Cobertura global',
+    description:
+      'Ofrecemos asesoría integral en comercio internacional, incluyendo análisis de costos, documentación, medios de pago, y asesoría legal aduanera. También gestionamos inscripciones para importadores y exportadores, y brindamos apoyo en regímenes promocionales y clasificaciones arancelarias.'
+  },
+  {
+    icon: GiAlliedStar,
+    title: 'Servicio premium',
+    description:
+      'Ofrecemos un servicio de primera clase con atención personalizada y soluciones a medida para cada cliente.'
+  }
+];
 
-const Service = () => {
+export default function Service() {
   useEffect(() => {
     const updateScrollSpeed = () => {
       const viewportWidth = window.innerWidth;
+      const elements = document.querySelectorAll('.service');
 
-      const firstElement = document.querySelector('.service[data-scroll-speed="2"]');
-      const secondElement = document.querySelector('.service[data-scroll-speed="0"]');
-      const thirdElement = document.querySelector('.service[data-scroll-speed="-2"]');
-
-      if (viewportWidth < 1024) {
-        if (firstElement) firstElement.setAttribute('data-scroll-speed', '0');
-        if (thirdElement) thirdElement.setAttribute('data-scroll-speed', '0');
-      } else {
-        if (firstElement) firstElement.setAttribute('data-scroll-speed', '2');
-        if (thirdElement) thirdElement.setAttribute('data-scroll-speed', '-2');
-      }
+      elements.forEach((element, index) => {
+        if (viewportWidth < 1024) {
+          element.setAttribute('data-scroll-speed', '0');
+        } else {
+          const speed = index % 2 === 0 ? '2' : '-2';
+          element.setAttribute('data-scroll-speed', speed);
+        }
+      });
     };
 
-    updateScrollSpeed(); // Actualiza al cargar la página
-    window.addEventListener('resize', updateScrollSpeed); // Actualiza al redimensionar
+    updateScrollSpeed();
+    window.addEventListener('resize', updateScrollSpeed);
 
     return () => {
       window.removeEventListener('resize', updateScrollSpeed);
@@ -30,69 +58,47 @@ const Service = () => {
   }, []);
 
   return (
-    <section className='w-screen h-screen flex flex-row items-center justify-center' data-scroll-section>
-      <div className='flex flex-row items-center justify-center w-[90%] h-full'>
-        <div className="flex flex-col w-5/12 justify-center items-start">
-          <h1 className='text-[10vw] leading-[0.9] lg:text-[5vw] w-[100%] font-[700] m-0 p-0'>Explora los servicios que ofrecemos</h1>
-          <span className='text-xl w-[90%] mt-8'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus iure sit iste nostrum fugit cupiditate numquam placeat dignissimos non? Similique exercitationem magnam repellat, iste libero quas aspernatur dicta cupiditate.</span>
+    <section
+      className="bg-white text-black p-4 sm:px-8 sm:pb-16 relative overflow-hidden"
+      data-scroll-section
+    >
+      <div className="max-w-7xl mx-auto relative z-10 py-6 sm:py-32">
+        <div className="flex flex-col items-center justify-center w-full text-center">
+          <h1 className="text-3xl sm:text-[7.5vw] font-bold leading-tight sm:leading-[1]">
+            Nuestros
+            <br />
+            Servicios
+          </h1>
+          <p className="text-sm sm:text-[0.9vw] text-gray-600 mt-4 sm:mt-6 w-[60%]">
+            Descubre nuestra amplia gama de servicios diseñados para satisfacer
+            tus necesidades de transporte y logística. Desde soluciones aéreas
+            hasta terrestres, estamos aquí para ayudarte.
+          </p>
         </div>
-        <div className='w-7/12 h-full flex items-center justify-center'>
-          <div className='w-full h-[60%] flex flex-row'>
-            <div className='w-1/2 h-full flex flex-col justify-end items-end py-4 pr-2 gap-4'>
-              <div className='border-[1px] border-neutral-300 w-full h-[47%] rounded-3xl flex flex-col gap-2'>
-                <div className='w-full h-auto px-8 pt-8 flex items-center'> 
-                  <div className='bg-neutral-950 w-10 h-10 flex items-center justify-center rounded-md'>
-                    <GiCommercialAirplane className='text-white'/>
+        <div className="flex flex-col items-center justify-center mt-10">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+            {serviceItems.map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col h-[15vw] border border-gray-300 rounded-xl p-6 gap-4 transition-all duration-300 hover:shadow-lg"
+              >
+                <div className="flex items-center">
+                  <div className="border border-gray-600 w-10 h-10 flex items-center justify-center rounded-xl">
+                    <item.icon
+                      className="text-gray-600 text-2xl"
+                      aria-hidden="true"
+                    />
                   </div>
-                  <h3 className='text-[32px] font-medium ml-3'>Queres volar wachin?</h3>
+                  <h3 className="text-2xl font-semibold ml-4">{item.title}</h3>
                 </div>
-                <div className='px-8'>
-                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolores, dolorum ad facilis quaerat nihil cum dolor, unde obcaecati porro distinctio voluptas, eius assumenda natus consequuntur minima quasi voluptatum delectus?</span>
-                </div>
-                
-
+                <p className="text-sm sm:text-[0.9vw] text-gray-600 flex-grow">
+                  {item.description}
+                </p>
               </div>
-              <div className='border-[1px] border-neutral-300 w-full h-[47%] rounded-3xl flex flex-col gap-2'>
-                <div className='w-full h-auto px-8 pt-8 flex items-center'> 
-                  <div className='bg-neutral-950 w-10 h-10 flex items-center justify-center rounded-md'>
-                    <GiTruck className='text-white'/>
-                  </div>
-                  <h3 className='text-[32px] font-medium ml-3'>Destrucción total</h3>
-                </div>
-                <div className='px-8'>
-                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolores, dolorum ad facilis quaerat nihil cum dolor, unde obcaecati porro distinctio voluptas, eius assumenda natus consequuntur minima quasi voluptatum delectus?</span>
-                </div>
-              </div>
-            </div>
-            <div className='w-1/2 h-full flex flex-col justify-start items-start py-4 pl-2 gap-4'>
-              <div className='border-[1px] border-neutral-300 w-full h-[47%] rounded-3xl flex flex-col gap-2'>
-              <div className='w-full h-auto px-8 pt-8 flex items-center'> 
-                  <div className='bg-neutral-950 w-10 h-10 flex items-center justify-center rounded-md'>
-                    <GiWorld className='text-white'/>
-                  </div>
-                  <h3 className='text-[32px] font-medium ml-3'>El mundo es nuestro</h3>
-                </div>
-                <div className='px-8'>
-                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolores, dolorum ad facilis quaerat nihil cum dolor, unde obcaecati porro distinctio voluptas, eius assumenda natus consequuntur minima quasi voluptatum delectus?</span>
-                </div>
-              </div>
-              <div className='border-[1px] border-neutral-300 w-full h-[47%] rounded-3xl flex flex-col gap-2'>
-              <div className='w-full h-auto px-8 pt-8 flex items-center'> 
-                  <div className='bg-neutral-950 w-10 h-10 flex items-center justify-center rounded-md'>
-                    <GiAlliedStar className='text-white'/>
-                  </div>
-                  <h3 className='text-[32px] font-medium ml-3'>Jaja somos cracks</h3>
-                </div>
-                <div className='px-8'>
-                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolores, dolorum ad facilis quaerat nihil cum dolor, unde obcaecati porro distinctio voluptas, eius assumenda natus consequuntur minima quasi voluptatum delectus?</span>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Service;
+}

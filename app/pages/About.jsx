@@ -15,14 +15,14 @@ export default function Component() {
 
   return (
     <section
-      className="bg-white text-black p-4 sm:px-8 sm:py-16 relative overflow-hidden"
+      className="bg-white text-black p-4 sm:px-8 sm:pt-16 pb-8 relative overflow-hidden"
       data-scroll-section
     >
       <div className="max-w-7xl mx-auto relative z-10 py-6 sm:py-32">
         <div className="flex flex-col items-start justify-center w-full sm:w-[27.5%]">
-          <h2 className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
+          <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             ¿Quienes Somos?
-          </h2>
+          </span>
           <h1 className="text-3xl sm:text-[7.5vw] font-bold leading-tight sm:leading-[1]">
             Sobre Nosotros
           </h1>
@@ -44,7 +44,7 @@ export default function Component() {
               width={16}
               height={9}
               objectFit="cover"
-              className="rounded-lg"
+              className="rounded-xl"
             />
           </div>
           <Image
