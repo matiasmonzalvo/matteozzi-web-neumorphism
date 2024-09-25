@@ -80,7 +80,7 @@ export default function Service() {
                 <div>
                   <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
                     <item.icon
-                      className="text-gray-600 text-xl"
+                      className="text-black text-xl"
                       aria-hidden="true"
                     />
                   </div>
@@ -92,7 +92,7 @@ export default function Service() {
                   </p>
                 </div>
 
-                <button className="w-full bg-gray-900 text-white hover:bg-cyan-600 py-2 rounded-xl mt-4 font-semibold transition">
+                <button className="w-full bg-black text-white hover:bg-cyan-600 py-2 rounded-xl mt-4 font-semibold transition duration-400">
                   Consultar →
                 </button>
               </div>
