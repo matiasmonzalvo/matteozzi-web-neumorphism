@@ -75,7 +75,7 @@ export default function Service() {
             {serviceItems.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col sm:h-[28vw] border border-gray-300 rounded-3xl p-6 transition duration-300 hover:shadow-lg justify-between"
+                className="flex flex-col sm:h-[28vw] border border-gray-300 rounded-2xl p-6 transition duration-300 hover:shadow-lg justify-between"
               >
                 <div>
                   <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">

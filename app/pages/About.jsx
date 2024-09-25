@@ -53,7 +53,7 @@ export default function Component() {
             width={500}
             height={500}
             objectFit="cover"
-            className="rounded-lg hidden sm:block"
+            className="rounded-2xl hidden sm:block"
           />
         </div>
 
