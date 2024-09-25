@@ -15,21 +15,15 @@ const serviceItems = [
   },
   {
     icon: GiTruck,
-    title: 'Agentes de Transporte Aduanero',
+    title: 'Transporte Aduanero',
     description:
-      'Ofrecemos servicios de Agente de Transporte Aduanero: trasbordos, seguros y fletes nacionales e internacionales, tránsitos terrestres y aéreos, reembarcos, permisos de transporte, y coordinación de embarques. También brindamos atención personalizada, confección de documentos de carga, gestión de vuelos internacionales en el Aeropuerto de S.C. de Bariloche, logística internacional multimodal y servicios de estiba.'
+      'Ofrecemos servicios de Agente de Transporte Aduanero: trasbordos, seguros y fletes nacionales e internacionales, tránsitos terrestres y aéreos, reembarcos, permisos de transporte, y coordinación de embarques. '
   },
   {
     icon: GiWorld,
     title: 'Cobertura global',
     description:
       'Ofrecemos asesoría integral en comercio internacional, incluyendo análisis de costos, documentación, medios de pago, y asesoría legal aduanera. También gestionamos inscripciones para importadores y exportadores, y brindamos apoyo en regímenes promocionales y clasificaciones arancelarias.'
-  },
-  {
-    icon: GiAlliedStar,
-    title: 'Servicio premium',
-    description:
-      'Ofrecemos un servicio de primera clase con atención personalizada y soluciones a medida para cada cliente.'
   }
 ];
 
@@ -64,36 +58,43 @@ export default function Service() {
     >
       <div className="max-w-7xl mx-auto relative z-10 py-6 sm:py-32">
         <div className="flex flex-col items-center justify-center w-full text-center">
-          <h1 className="text-3xl sm:text-[7.5vw] font-bold leading-tight sm:leading-[1]">
-            Nuestros
-            <br />
+          <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
+            ¿Que hacemos?
+          </span>
+          <h1 className="text-3xl sm:text-[6.5vw] font-bold leading-tight sm:leading-[1]">
             Servicios
           </h1>
-          <p className="text-sm sm:text-[0.9vw] text-gray-600 mt-4 sm:mt-6 w-[60%]">
+          <p className="text-sm sm:text-[0.9vw] text-gray-600 mt-4 sm:mt-4 w-[60%]">
             Descubre nuestra amplia gama de servicios diseñados para satisfacer
             tus necesidades de transporte y logística. Desde soluciones aéreas
             hasta terrestres, estamos aquí para ayudarte.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center mt-10">
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="flex flex-col items-center justify-center mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-[85%]">
             {serviceItems.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col h-[15vw] border border-gray-300 rounded-xl p-6 gap-4 transition-all duration-300 hover:shadow-lg"
+                className=" flex flex-col h-[28vw] border border-gray-300 rounded-3xl p-6 transition duration-300 hover:shadow-lg justify-between"
               >
-                <div className="flex items-center">
-                  <div className="border border-gray-600 w-10 h-10 flex items-center justify-center rounded-xl">
+                <div>
+                  <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
                     <item.icon
-                      className="text-gray-600 text-2xl"
+                      className="text-gray-600 text-xl"
                       aria-hidden="true"
                     />
                   </div>
-                  <h3 className="text-2xl font-semibold ml-4">{item.title}</h3>
+                  <h3 className="text-2xl sm:text-2xl font-bold leading-tight sm:leading-[1]">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm sm:text-[0.95vw] text-gray-600 flex-grow mt-2">
+                    {item.description}
+                  </p>
                 </div>
-                <p className="text-sm sm:text-[0.9vw] text-gray-600 flex-grow">
-                  {item.description}
-                </p>
+
+                <button className="w-full bg-gray-900 text-white hover:bg-cyan-600 py-2 rounded-xl mt-4 font-semibold transition">
+                  Consultar →
+                </button>
               </div>
             ))}
           </div>
