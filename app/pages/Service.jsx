@@ -59,7 +59,7 @@ export default function Service() {
       <div className="max-w-7xl mx-auto relative z-10 py-6 sm:py-32">
         <div className="flex flex-col items-center justify-center w-full text-center">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
-            ¿Que hacemos?
+            ¿Que ofrecemos?
           </span>
           <h1 className="text-3xl sm:text-[6.5vw] font-bold leading-tight sm:leading-[1]">
             Servicios
@@ -75,7 +75,7 @@ export default function Service() {
             {serviceItems.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col sm:h-[440px] border border-gray-300 rounded-2xl p-6 transition duration-300 hover:shadow-lg justify-between"
+                className="flex flex-col h-[400px] lg:h-[440px] border border-gray-300 rounded-2xl p-6 transition duration-300 hover:shadow-lg justify-between"
               >
                 <div>
                   <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
