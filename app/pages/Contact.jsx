@@ -171,7 +171,12 @@ export default function Contact() {
             ))}
           </div>
         </div>
-        <div className="w-full">
+        <div
+          className="w-full"
+          data-scroll
+          data-scroll-speed="1"
+          data-scroll-direction="horizontal"
+        >
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label
