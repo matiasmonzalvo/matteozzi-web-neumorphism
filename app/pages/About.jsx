@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useEffect } from 'react';
 export default function Component() {
   const items = [
     {
@@ -13,6 +14,26 @@ export default function Component() {
     }
   ];
 
+  useEffect(() => {
+    const updateScrollSpeed = () => {
+      const viewportWidth = window.innerWidth;
+      const elements = document.querySelectorAll('.about');
+
+      elements.forEach((element) => {
+        if (viewportWidth < 1024) {
+          element.setAttribute('data-scroll-speed', '0');
+        }
+      });
+    };
+
+    updateScrollSpeed();
+    window.addEventListener('resize', updateScrollSpeed);
+
+    return () => {
+      window.removeEventListener('resize', updateScrollSpeed);
+    };
+  }, []);
+
   return (
     <section
       className="bg-white text-black p-4 sm:px-8 sm:pt-16 pb-8 relative overflow-hidden"
@@ -20,7 +41,7 @@ export default function Component() {
     >
       <div className="max-w-7xl mx-auto relative z-10 py-6 sm:py-32">
         <div
-          className="flex flex-col items-start justify-center w-full sm:w-[27.5%]"
+          className="about flex flex-col items-start justify-center w-full sm:w-[27.5%]"
           data-scroll-speed="2"
           data-scroll
         >
@@ -40,7 +61,7 @@ export default function Component() {
         </div>
 
         <div
-          className="sm:absolute sm:inset-0 sm:-z-10 sm:flex sm:items-center sm:justify-center"
+          className="about sm:absolute sm:inset-0 sm:-z-10 sm:flex sm:items-center sm:justify-center"
           data-scroll
           data-scroll-speed="1"
         >
@@ -67,7 +88,7 @@ export default function Component() {
 
         <div className="w-full sm:w-[27.5%] sm:absolute sm:right-0 sm:top-1/2 sm:transform sm:-translate-y-1/2">
           <div
-            className="space-y-6"
+            className="about space-y-6"
             data-scroll
             data-scroll-speed="-0.25"
             data-scroll-direction="horizontal"

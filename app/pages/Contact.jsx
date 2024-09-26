@@ -171,12 +171,7 @@ export default function Contact() {
             ))}
           </div>
         </div>
-        <div
-          className="w-full"
-          data-scroll
-          data-scroll-speed="1"
-          data-scroll-direction="horizontal"
-        >
+        <div className="w-full">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label
@@ -194,7 +189,9 @@ export default function Contact() {
                 className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
               />
               {errors.nombre && (
-                <p className="mt-1 text-xs text-red-500">{errors.nombre}</p>
+                <p className="mt-1 text-[0.7vw] text-red-500">
+                  {errors.nombre}
+                </p>
               )}
             </div>
             <div className="flex space-x-4">
@@ -214,7 +211,9 @@ export default function Contact() {
                   className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
                 />
                 {errors.email && (
-                  <p className="mt-1 text-xs text-red-500">{errors.email}</p>
+                  <p className="mt-1 text-[0.7vw] text-red-500">
+                    {errors.email}
+                  </p>
                 )}
               </div>
               <div className="flex-1">
@@ -233,7 +232,9 @@ export default function Contact() {
                   className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
                 />
                 {errors.telefono && (
-                  <p className="mt-1 text-xs text-red-500">{errors.telefono}</p>
+                  <p className="mt-1 text-[0.7vw] text-red-500">
+                    {errors.telefono}
+                  </p>
                 )}
               </div>
             </div>
@@ -253,7 +254,9 @@ export default function Contact() {
                 className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
               ></textarea>
               {errors.mensaje && (
-                <p className="mt-1 text-xs text-red-500">{errors.mensaje}</p>
+                <p className="mt-1 text-[0.7vw] text-red-500">
+                  {errors.mensaje}
+                </p>
               )}
             </div>
             <div>
@@ -267,7 +270,7 @@ export default function Contact() {
             </div>
           </form>
           {response && (
-            <p className="mt-4 text-sm text-green-600 font-semibold">
+            <p className="mt-4 text-[0.7vw] text-green-600 font-semibold">
               {response}
             </p>
           )}
