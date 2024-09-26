@@ -71,11 +71,11 @@ export default function Service() {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center mt-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:w-[85%]">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:w-[90%]">
             {serviceItems.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col sm:h-[28vw] border border-gray-300 rounded-2xl p-6 transition duration-300 hover:shadow-lg justify-between"
+                className="flex flex-col sm:h-[440px] border border-gray-300 rounded-2xl p-6 transition duration-300 hover:shadow-lg justify-between"
               >
                 <div>
                   <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
