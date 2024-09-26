@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   return (
     <footer
-      className="w-full bg-gray-900 text-white py-12 lg:py-16"
+      className="mx-auto w-[80%] border border-gray-300 text-black rounded-t-3xl py-12 lg:py-16"
       data-scroll-section
     >
       <div className="container mx-auto px-4 lg:px-8">
@@ -28,17 +28,16 @@ export default function Footer() {
           <div className="w-full lg:w-[50%]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
               <div>
-                <h3 className="text-xl font-semibold mb-2">Contacto</h3>
+                <h3 className="text-xl font-semibold mb-2">Links</h3>
                 <ul className="space-y-2">
-                  <li className="flex items-center">
-                    <FaEnvelope className="mr-2 text-xs text-gray-400" />
-                    <span className="text-xs">
-                      info@matteozzi-lavilla.com.ar
-                    </span>
+                  <li className="flex items-center hover:underline cursor-pointer">
+                    <a className="text-xs">Nosotros</a>
                   </li>
-                  <li className="flex items-center">
-                    <FaPhone className="mr-2 text-xs text-gray-400" />
-                    <span className="text-xs">54-2944-422066</span>
+                  <li className="flex items-center hover:underline cursor-pointer">
+                    <a className="text-xs">Servicios</a>
+                  </li>
+                  <li className="flex items-center hover:underline cursor-pointer">
+                    <a className="text-xs">Contacto</a>
                   </li>
                 </ul>
               </div>
