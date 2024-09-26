@@ -92,7 +92,7 @@ export default function Service() {
                   </p>
                 </div>
 
-                <button className="w-full bg-black text-white hover:bg-cyan-600 py-2 rounded-xl mt-4 font-semibold transition duration-400">
+                <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
                   Consultar →
                 </button>
               </div>
