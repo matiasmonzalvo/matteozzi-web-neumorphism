@@ -19,7 +19,11 @@ export default function Component() {
       data-scroll-section
     >
       <div className="max-w-7xl mx-auto relative z-10 py-6 sm:py-32">
-        <div className="flex flex-col items-start justify-center w-full sm:w-[27.5%]">
+        <div
+          className="flex flex-col items-start justify-center w-full sm:w-[27.5%]"
+          data-scroll-speed="2"
+          data-scroll
+        >
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             ¿Quienes Somos?
           </span>
@@ -35,7 +39,11 @@ export default function Component() {
           </p>
         </div>
 
-        <div className="sm:absolute sm:inset-0 sm:-z-10 sm:flex sm:items-center sm:justify-center">
+        <div
+          className="sm:absolute sm:inset-0 sm:-z-10 sm:flex sm:items-center sm:justify-center"
+          data-scroll
+          data-scroll-speed="1"
+        >
           <div className="w-full aspect-video mt-8 mb-8 sm:hidden">
             <Image
               src="/cargo.jpg"
@@ -58,7 +66,12 @@ export default function Component() {
         </div>
 
         <div className="w-full sm:w-[27.5%] sm:absolute sm:right-0 sm:top-1/2 sm:transform sm:-translate-y-1/2">
-          <div className="space-y-6">
+          <div
+            className="space-y-6"
+            data-scroll
+            data-scroll-speed="-0.25"
+            data-scroll-direction="horizontal"
+          >
             {items.map((item, index, array) => (
               <div key={index}>
                 <div className="flex flex-col text-black py-4 sm:py-6">
