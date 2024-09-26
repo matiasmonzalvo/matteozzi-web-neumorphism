@@ -27,7 +27,7 @@ export default function Service() {
       className="bg-white text-black p-4 sm:px-8 relative overflow-hidden"
       data-scroll-section
     >
-      <div className="max-w-7xl mx-auto relative z-10 py-6 sm:pt-32">
+      <div className="lg:w-[80%] mx-auto relative z-10 py-6 sm:pt-32">
         <div className="flex flex-col items-center justify-center w-full text-center">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             ¿Que ofrecemos?
@@ -42,10 +42,10 @@ export default function Service() {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center mt-16">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:w-[90%]">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-[95%] lg:w-[90%]">
             {/* CARD1 */}
             <div
-              className="service flex flex-col h-[400px] lg:h-[440px] border border-gray-300 rounded-2xl p-6 hover:shadow-lg justify-between"
+              className="service flex flex-col h-[400px] lg:h-[500px] border border-gray-300 rounded-2xl p-6 hover:shadow-lg justify-between"
               data-scroll
               data-scroll-speed="0.6"
             >
@@ -73,7 +73,7 @@ export default function Service() {
             </div>
             {/* CARD2 */}
             <div
-              className="service flex flex-col h-[400px] lg:h-[440px] border border-gray-300 rounded-2xl p-6 hover:shadow-lg justify-between"
+              className="service flex flex-col h-[400px] lg:h-[500px] border border-gray-300 rounded-2xl p-6 hover:shadow-lg justify-between"
               data-scroll
               data-scroll-speed="0"
             >
@@ -97,7 +97,7 @@ export default function Service() {
             </div>
             {/* CARD3 */}
             <div
-              className="service flex flex-col h-[400px] lg:h-[440px] border border-gray-300 rounded-2xl p-6  hover:shadow-lg justify-between"
+              className="service flex flex-col h-[400px] lg:h-[500px] border border-gray-300 rounded-2xl p-6  hover:shadow-lg justify-between"
               data-scroll
               data-scroll-speed="-0.6"
             >

@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
 
       {/* Marquee */}
-      <div className="w-full absolute bottom-0 left-0 z-50">
+      {/* <div className="w-full absolute bottom-0 left-0 z-50">
         <Marquee className="opacity-100 filter-none">
           <Image
             className="mr-40"
@@ -96,7 +96,7 @@ const Hero = () => {
             alt="LAN"
           />
         </Marquee>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -14,8 +14,8 @@ export default function Navbar() {
 
   return (
     <nav className="bg-transparent w-full py-6 fixed z-[40]">
-      <div className="w-[90%] mx-auto px-6 rounded-xl glass relative">
-        <div className="flex items-center justify-between h-12">
+      <div className="lg:w-[80%] w-[90%] mx-auto px-6 rounded-xl glass relative">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="font-bold text-xl leading-tight text-white">

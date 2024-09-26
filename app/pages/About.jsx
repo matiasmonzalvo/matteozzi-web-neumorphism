@@ -39,7 +39,7 @@ export default function Component() {
       className="bg-white text-black p-4 sm:px-8 sm:pt-16 pb-8 relative overflow-hidden"
       data-scroll-section
     >
-      <div className="max-w-7xl mx-auto relative z-10 py-6 sm:py-32">
+      <div className="lg:w-[80%] w-[95%] mx-auto relative z-10 py-6 sm:py-32">
         <div
           className="about flex flex-col items-start justify-center w-full sm:w-[27.5%]"
           data-scroll-speed="2"
@@ -99,7 +99,7 @@ export default function Component() {
                   <h4 className="text-lg sm:text-[1.75vw] font-bold mb-2">
                     {item.title}
                   </h4>
-                  <span className="text-xs sm:text-sm text-gray-600">
+                  <span className="text-xs text-gray-600">
                     {item.description}
                   </span>
                 </div>
