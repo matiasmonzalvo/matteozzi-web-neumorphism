@@ -1,31 +1,5 @@
 import React, { useEffect } from 'react';
-import {
-  GiCommercialAirplane,
-  GiTruck,
-  GiWorld,
-  GiAlliedStar
-} from 'react-icons/gi';
-
-const serviceItems = [
-  {
-    icon: GiCommercialAirplane,
-    title: 'Despachante de Aduana',
-    description:
-      'Ofrecemos servicios en despachos de importación, permisos de embarque, importaciones y exportaciones temporales, actividades bancarias, obtención de regímenes especiales, gestiones ante organismos oficiales, permisos de embarque para exportación, y asesoramiento en el área bancaria.'
-  },
-  {
-    icon: GiTruck,
-    title: 'Transporte Aduanero',
-    description:
-      'Ofrecemos servicios de Agente de Transporte Aduanero: trasbordos, seguros y fletes nacionales e internacionales, tránsitos terrestres y aéreos, reembarcos, permisos de transporte, y coordinación de embarques. '
-  },
-  {
-    icon: GiWorld,
-    title: 'Cobertura global',
-    description:
-      'Ofrecemos asesoría integral en comercio internacional, incluyendo análisis de costos, documentación, medios de pago, y asesoría legal aduanera. También gestionamos inscripciones para importadores y exportadores, y brindamos apoyo en regímenes promocionales y clasificaciones arancelarias.'
-  }
-];
+import { GiCommercialAirplane, GiTruck, GiWorld } from 'react-icons/gi';
 
 export default function Service() {
   useEffect(() => {
@@ -70,33 +44,85 @@ export default function Service() {
             hasta terrestres, estamos aquí para ayudarte.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center mt-12">
+        <div className="flex flex-col items-center justify-center mt-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:w-[90%]">
-            {serviceItems.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col h-[400px] lg:h-[440px] border border-gray-300 rounded-2xl p-6 transition duration-300 hover:shadow-lg justify-between"
-              >
-                <div>
-                  <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
-                    <item.icon
-                      className="text-black text-xl"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <h3 className="text-2xl sm:text-2xl font-bold leading-tight sm:leading-[1]">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
-                    {item.description}
-                  </p>
+            {/* CARD1 */}
+            <div
+              className="flex flex-col h-[400px] lg:h-[440px] border border-gray-300 rounded-2xl p-6 hover:shadow-lg justify-between"
+              data-scroll
+              data-scroll-speed="0.6"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
+                  <GiCommercialAirplane
+                    className="text-black text-xl"
+                    aria-hidden="true"
+                  />
                 </div>
-
-                <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
-                  Consultar →
-                </button>
+                <h3 className="text-2xl sm:text-2xl font-bold leading-tight sm:leading-[1]">
+                  Despachante de Aduana
+                </h3>
+                <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
+                  Ofrecemos servicios en despachos de importación, permisos de
+                  embarque, importaciones y exportaciones temporales,
+                  actividades bancarias, obtención de regímenes especiales,
+                  gestiones ante organismos oficiales, permisos de embarque para
+                  exportación, y asesoramiento en el área bancaria.
+                </p>
               </div>
-            ))}
+              <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
+                Consultar →
+              </button>
+            </div>
+            {/* CARD2 */}
+            <div
+              className="flex flex-col h-[400px] lg:h-[440px] border border-gray-300 rounded-2xl p-6 hover:shadow-lg justify-between"
+              data-scroll
+              data-scroll-speed="0"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
+                  <GiTruck className="text-black text-xl" aria-hidden="true" />
+                </div>
+                <h3 className="text-2xl sm:text-2xl font-bold leading-tight sm:leading-[1]">
+                  Transporte Aduanero
+                </h3>
+                <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
+                  Ofrecemos servicios de Agente de Transporte Aduanero:
+                  trasbordos, seguros y fletes nacionales e internacionales,
+                  tránsitos terrestres y aéreos, reembarcos, permisos de
+                  transporte, y coordinación de embarques.
+                </p>
+              </div>
+              <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
+                Consultar →
+              </button>
+            </div>
+            {/* CARD3 */}
+            <div
+              className="flex flex-col h-[400px] lg:h-[440px] border border-gray-300 rounded-2xl p-6  hover:shadow-lg justify-between"
+              data-scroll
+              data-scroll-speed="-0.6"
+            >
+              <div>
+                <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
+                  <GiWorld className="text-black text-xl" aria-hidden="true" />
+                </div>
+                <h3 className="text-2xl sm:text-2xl font-bold leading-tight sm:leading-[1]">
+                  Cobertura global
+                </h3>
+                <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
+                  Ofrecemos asesoría integral en comercio internacional,
+                  incluyendo análisis de costos, documentación, medios de pago,
+                  y asesoría legal aduanera. También gestionamos inscripciones
+                  para importadores y exportadores, y brindamos apoyo en
+                  regímenes promocionales y clasificaciones arancelarias.
+                </p>
+              </div>
+              <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
+                Consultar →
+              </button>
+            </div>
           </div>
         </div>
       </div>
