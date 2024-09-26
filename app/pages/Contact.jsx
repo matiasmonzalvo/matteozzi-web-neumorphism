@@ -145,7 +145,7 @@ export default function Contact() {
 
   return (
     <section
-      className="bg-white text-black p-4 sm:px-8 sm:pb-16 relative overflow-hidden"
+      className="bg-white text-black p-4 sm:px-8 sm:pt-32 relative overflow-hidden"
       data-scroll-section
     >
       <div className="flex flex-row items-start justify-between max-w-7xl mx-auto relative z-10">

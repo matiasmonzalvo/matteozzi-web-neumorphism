@@ -24,10 +24,10 @@ export default function Service() {
 
   return (
     <section
-      className="bg-white text-black p-4 sm:px-8 sm:pb-16 relative overflow-hidden"
+      className="bg-white text-black p-4 sm:px-8 relative overflow-hidden"
       data-scroll-section
     >
-      <div className="max-w-7xl mx-auto relative z-10 py-6 sm:py-32">
+      <div className="max-w-7xl mx-auto relative z-10 py-6 sm:pt-32">
         <div className="flex flex-col items-center justify-center w-full text-center">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             ¿Que ofrecemos?
