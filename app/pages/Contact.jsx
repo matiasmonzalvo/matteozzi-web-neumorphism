@@ -9,7 +9,7 @@ const buttonMotionConfig = {
     transition: { duration: 0.1 }
   },
   whileTap: {
-    scale: 0.9
+    scale: 0.95
   }
 };
 
@@ -206,7 +206,7 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
                 />
                 {errors.email && (
                   <p className="mt-1 text-xs text-red-500">{errors.email}</p>
@@ -255,7 +255,7 @@ export default function Contact() {
               <motion.button
                 type="submit"
                 {...buttonMotionConfig}
-                className="w-full px-4 py-2 bg-black text-white rounded-xl hover:bg-blue-500 transition duration-200 ease-in-out shadow-md"
+                className="w-full px-4 py-2 bg-black text-white rounded-xl hover:bg-cyan-500 transition duration-200 ease-in-out shadow-md"
               >
                 Enviar
               </motion.button>
