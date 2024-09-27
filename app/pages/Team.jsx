@@ -43,7 +43,7 @@ const Team = () => {
               <h3 className="text-xl font-bold mt-4">
                 Tomás Agustín Matteozzi
               </h3>
-              <span className="text-sm sm:text-[0.7vw] text-gray-600 mt-4 sm:mt-6 uppercase">
+              <span className="text-sm sm:text-lg text-gray-600 mt-4 sm:mt-6 uppercase">
                 CEO & Fundador de la empresa
               </span>
             </div>
@@ -67,7 +67,7 @@ const Team = () => {
               <h3 className="text-xl font-bold mt-4">
                 Tomás Agustín Matteozzi
               </h3>
-              <span className="text-sm sm:text-[0.7vw] text-gray-600 mt-4 sm:mt-6 uppercase">
+              <span className="text-sm sm:text-lg text-gray-600 mt-4 sm:mt-6 uppercase">
                 CEO & Fundador de la empresa
               </span>
             </div>
@@ -91,7 +91,7 @@ const Team = () => {
               <h3 className="text-xl font-bold mt-4">
                 Tomás Agustín Matteozzi
               </h3>
-              <span className="text-sm sm:text-[0.7vw] text-gray-600 mt-4 sm:mt-6 uppercase">
+              <span className="text-sm sm:text-lg text-gray-600 mt-4 sm:mt-6 uppercase">
                 CEO & Fundador de la empresa
               </span>
             </div>
