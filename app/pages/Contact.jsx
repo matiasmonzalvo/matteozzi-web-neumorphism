@@ -166,7 +166,9 @@ export default function Contact() {
             {contactInfo.map((info, index) => (
               <div key={index} className="flex items-center">
                 {info.icon}
-                <span className="text-gray-600 text-sm over">{info.text}</span>
+                <span className="text-gray-600 text-sm lg:text-base over">
+                  {info.text}
+                </span>
               </div>
             ))}
           </div>
