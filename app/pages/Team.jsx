@@ -6,7 +6,7 @@ const Team = () => {
       className="bg-white text-black p-4 sm:px-8 sm:pt-32 pb-8 relative overflow-hidden"
       data-scroll-section
     >
-      <div className="max-w-7xl mx-auto relative z-10 py-6 sm:pt-16">
+      <div className="w-[80%] mx-auto relative z-10 py-6 sm:pt-16">
         <div className="flex flex-col items-start justify-start w-full">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             Team
