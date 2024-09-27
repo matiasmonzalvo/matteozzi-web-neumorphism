@@ -20,7 +20,7 @@ export default function Footer() {
               Lavilla
             </h2>
           </div>
-          <div className="w-full lg:w-[50%]">
+          <div className="w-full lg:w-[35%]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
               <div>
                 <h3 className="text-xl font-semibold mb-2">Links</h3>
@@ -53,11 +53,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-4 border-t border-gray-800 flex flex-col lg:flex-row justify-between items-center">
-          <p className="text-xs text-gray-500">
-            © 2024 Matteozzi Lavilla. All Rights Reserved
-          </p>
+          <p className="text-xs text-gray-500">Developed by Mazzo</p>
           <p className="text-xs text-gray-500 mt-2 lg:mt-0">
-            Developed by Mazzo
+            © 2024 Matteozzi Lavilla. All Rights Reserved
           </p>
         </div>
       </div>

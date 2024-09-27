@@ -24,7 +24,7 @@ const Team = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:w-[80%] text-center mt-16">
             {/* CARD1 */}
             <div className="h-[400px]">
-              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-emerald-100 to-emerald-300">
+              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-emerald-100 to-emerald-600">
                 <a
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
@@ -48,7 +48,7 @@ const Team = () => {
             </div>
             {/* CARD1 */}
             <div className="h-[400px]">
-              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-sky-100 to-sky-300">
+              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-sky-100 to-sky-600">
                 <a
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
@@ -72,7 +72,7 @@ const Team = () => {
             </div>
             {/* CARD1 */}
             <div className="h-[400px]">
-              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-cyan-100 to-cyan-300">
+              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-cyan-100 to-cyan-600">
                 <a
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
