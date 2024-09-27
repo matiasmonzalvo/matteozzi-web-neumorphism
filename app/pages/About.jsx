@@ -39,9 +39,10 @@ export default function Component() {
       className="bg-white text-black p-4 sm:px-8 sm:pt-16 pb-8 relative overflow-hidden"
       data-scroll-section
     >
-      <div className="lg:w-[80%] w-[95%] mx-auto relative z-10 py-6 sm:py-32">
+      <div className="lg:w-[80%] mx-auto relative z-10 py-6 sm:py-32">
+        {/* LADO IZQUIERDO */}
         <div
-          className="about flex flex-col items-start justify-center w-full sm:w-[27.5%]"
+          className="about flex flex-col items-start justify-center w-full sm:w-[27.5%] "
           data-scroll-speed="2"
           data-scroll
         >
@@ -59,9 +60,9 @@ export default function Component() {
             de las relaciones económicas internacionales.
           </p>
         </div>
-
+        {/* FOTO */}
         <div
-          className="about sm:absolute sm:inset-0 sm:-z-10 sm:flex sm:items-center sm:justify-center"
+          className="about sm:absolute sm:inset-0 sm:-z-10 sm:flex sm:items-center sm:justify-center sm:w-[40%] sm:mx-auto"
           data-scroll
           data-scroll-speed="1"
         >
@@ -85,7 +86,7 @@ export default function Component() {
             className="rounded-2xl hidden sm:block"
           />
         </div>
-
+        {/* LADO DERECHO */}
         <div className="w-full sm:w-[27.5%] sm:absolute sm:right-0 sm:top-1/2 sm:transform sm:-translate-y-1/2">
           <div
             className="about space-y-6"
