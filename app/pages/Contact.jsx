@@ -148,8 +148,8 @@ export default function Contact() {
       className="bg-white text-black p-4 sm:px-8 sm:py-32 relative overflow-hidden"
       data-scroll-section
     >
-      <div className="flex flex-row items-start justify-between max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col items-start justify-start w-[1600px]">
+      <div className="flex flex-col lg:flex-row items-start justify-between max-w-7xl mx-auto relative z-10">
+        <div className="flex flex-col items-start justify-start lg:w-[1600px]">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             Contacto
           </span>
@@ -162,16 +162,16 @@ export default function Contact() {
             cualquier consulta sobre comercio internacional, despacho de aduanas
             o transporte aduanero.
           </p>
-          <div className="space-y-4">
+          <div className="w-full space-y-4">
             {contactInfo.map((info, index) => (
               <div key={index} className="flex items-center">
                 {info.icon}
-                <span className="text-gray-600">{info.text}</span>
+                <span className="text-gray-600 text-sm over">{info.text}</span>
               </div>
             ))}
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full mt-8 lg:mt-0">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label
@@ -189,9 +189,7 @@ export default function Contact() {
                 className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
               />
               {errors.nombre && (
-                <p className="mt-1 text-[0.7vw] text-red-500">
-                  {errors.nombre}
-                </p>
+                <p className="mt-1 text-sm text-red-500">{errors.nombre}</p>
               )}
             </div>
             <div className="flex space-x-4">
@@ -211,9 +209,7 @@ export default function Contact() {
                   className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
                 />
                 {errors.email && (
-                  <p className="mt-1 text-[0.7vw] text-red-500">
-                    {errors.email}
-                  </p>
+                  <p className="mt-1 text-sm text-red-500">{errors.email}</p>
                 )}
               </div>
               <div className="flex-1">
@@ -232,9 +228,7 @@ export default function Contact() {
                   className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
                 />
                 {errors.telefono && (
-                  <p className="mt-1 text-[0.7vw] text-red-500">
-                    {errors.telefono}
-                  </p>
+                  <p className="mt-1 text-sm text-red-500">{errors.telefono}</p>
                 )}
               </div>
             </div>
@@ -254,9 +248,7 @@ export default function Contact() {
                 className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
               ></textarea>
               {errors.mensaje && (
-                <p className="mt-1 text-[0.7vw] text-red-500">
-                  {errors.mensaje}
-                </p>
+                <p className="mt-1 text-sm text-red-500">{errors.mensaje}</p>
               )}
             </div>
             <div>
@@ -270,7 +262,7 @@ export default function Contact() {
             </div>
           </form>
           {response && (
-            <p className="mt-4 text-[0.7vw] text-green-600 font-semibold">
+            <p className="mt-4 text-sm text-green-600 font-semibold">
               {response}
             </p>
           )}
