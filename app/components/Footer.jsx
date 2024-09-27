@@ -12,7 +12,7 @@ export default function Footer() {
       className="w-full border-t border-gray-300 text-black py-12 lg:py-16"
       data-scroll-section
     >
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="container mx-auto px-4 lg:px-8 w-[80%]">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
           <div className="w-full lg:w-[40%] mb-8 lg:mb-0">
             <h2 className="text-3xl lg:text-4xl font-bold leading-tight mb-2">
