@@ -148,8 +148,9 @@ export default function Contact() {
       className="bg-white text-black p-4 sm:px-8 sm:py-32 relative overflow-hidden"
       data-scroll-section
     >
-      <div className="flex flex-col lg:flex-row items-start justify-between max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col items-start justify-start lg:w-[1600px]">
+      {/* PRIMERA MITAD */}
+      <div className="flex flex-col lg:flex-row items-start justify-between lg:w-[80%] mx-auto relative z-10">
+        <div className="flex flex-col items-start justify-start lg:w-[50%] ">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             Contacto
           </span>
@@ -173,7 +174,8 @@ export default function Contact() {
             ))}
           </div>
         </div>
-        <div className="w-full mt-8 lg:mt-0">
+        {/* FORM */}
+        <div className="w-full lg:w-[50%] mt-8 lg:my-auto ">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label
@@ -244,7 +246,7 @@ export default function Contact() {
               <textarea
                 id="mensaje"
                 name="mensaje"
-                rows={6}
+                rows={4}
                 value={formData.mensaje}
                 onChange={handleChange}
                 className="w-full px-3 py-2 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500"
