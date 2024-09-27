@@ -61,11 +61,12 @@ export default function Service() {
                   Despachante de Aduana
                 </h3>
                 <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
-                  Ofrecemos servicios en despachos de importación, permisos de
-                  embarque, importaciones y exportaciones temporales,
-                  actividades bancarias, obtención de regímenes especiales,
-                  gestiones ante organismos oficiales, permisos de embarque para
-                  exportación, y asesoramiento en el área bancaria.
+                  Ofrecemos servicios especializados en despachos de
+                  importación, permisos de embarque, importaciones y
+                  exportaciones temporales, gestiones ante organismos oficiales,
+                  asesoramiento en el área bancaria, y obtención de regímenes
+                  especiales. También nos encargamos de permisos de embarque
+                  para exportación, garantizando un proceso ágil y eficiente.
                 </p>
               </div>
               <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
@@ -86,10 +87,11 @@ export default function Service() {
                   Transporte Aduanero
                 </h3>
                 <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
-                  Ofrecemos servicios de Agente de Transporte Aduanero:
-                  trasbordos, seguros y fletes nacionales e internacionales,
-                  tránsitos terrestres y aéreos, reembarcos, permisos de
-                  transporte, y coordinación de embarques.
+                  Como Agente de Transporte Aduanero, proporcionamos servicios
+                  de trasbordo, seguros y fletes tanto nacionales como
+                  internacionales, tránsitos terrestres y aéreos, reembarcos, y
+                  permisos de transporte. Asimismo, coordinamos embarques para
+                  asegurar una logística eficiente y sin contratiempos.
                 </p>
               </div>
               <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
@@ -111,10 +113,11 @@ export default function Service() {
                 </h3>
                 <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
                   Ofrecemos asesoría integral en comercio internacional,
-                  incluyendo análisis de costos, documentación, medios de pago,
-                  y asesoría legal aduanera. También gestionamos inscripciones
-                  para importadores y exportadores, y brindamos apoyo en
-                  regímenes promocionales y clasificaciones arancelarias.
+                  abarcando análisis de costos, documentación, medios de pago y
+                  asesoría legal aduanera. También gestionamos inscripciones
+                  para importadores y exportadores, brindamos apoyo en regímenes
+                  promocionales, y realizamos clasificaciones arancelarias
+                  precisas.
                 </p>
               </div>
               <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
