@@ -36,6 +36,7 @@ export default function Component() {
 
   return (
     <section
+      id="about"
       className="bg-white text-black p-4 sm:px-8 sm:pt-16 pb-8 relative overflow-hidden"
       data-scroll-section
     >

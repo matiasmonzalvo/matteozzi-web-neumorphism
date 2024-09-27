@@ -145,6 +145,7 @@ export default function Contact() {
 
   return (
     <section
+      id="contact"
       className="bg-white text-black p-4 sm:px-8 sm:py-32 relative overflow-hidden"
       data-scroll-section
     >

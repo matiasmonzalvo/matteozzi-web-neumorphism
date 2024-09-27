@@ -3,6 +3,7 @@ import { FaLinkedin } from 'react-icons/fa';
 const Team = () => {
   return (
     <section
+      id="team"
       className="bg-white text-black p-4 sm:px-8 sm:pt-32 pb-8 relative overflow-hidden"
       data-scroll-section
     >

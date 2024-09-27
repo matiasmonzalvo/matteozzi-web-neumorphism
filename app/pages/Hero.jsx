@@ -6,6 +6,7 @@ import Marquee from 'react-fast-marquee';
 const Hero = () => {
   return (
     <section
+      id="hero"
       className="w-screen h-screen sm:py-[10vw] py-[30vw]  lg:py-0 relative flex items-center justify-center overflow-hidden"
       data-scroll-section
     >

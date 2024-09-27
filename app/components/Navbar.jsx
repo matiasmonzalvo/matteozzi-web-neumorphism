@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -6,9 +7,9 @@ export default function Navbar() {
 
   const menuItems = [
     { name: 'Inicio', href: '/' },
-    { name: 'Nosotros', href: '/nosotros' },
-    { name: 'Servicios', href: '/servicios' },
-    { name: 'Equipo', href: '/equipo' }
+    { name: 'Nosotros', href: '#about' },
+    { name: 'Servicios', href: '#services' },
+    { name: 'Equipo', href: '#team' }
   ];
 
   return (
@@ -26,13 +27,13 @@ export default function Navbar() {
           <div className="hidden lg:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="flex space-x-2">
               {menuItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="text-white hover:text-cyan-300 px-3 py-2 rounded-md text-[0.9vw] transition-colors duration-200"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -93,13 +94,13 @@ export default function Navbar() {
       <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden mt-2`}>
         <div className="w-[90%] mx-auto rounded-xl glass overflow-hidden shadow-lg">
           {menuItems.map((item) => (
-            <a
+            <Link
               key={item.name}
               href={item.href}
               className="block px-4 py-3 text-white hover:bg-white/10 hover:text-cyan-300 transition-colors duration-200 text-sm font-medium"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
           <div className="px-4 py-3">
             <button className="w-full bg-gray-200 hover:bg-cyan-300 text-black font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-sm">
