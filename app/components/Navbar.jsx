@@ -1,6 +1,5 @@
 'use client';
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +29,7 @@ export default function Navbar() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-blue-500 px-3 py-2 rounded-md text-[0.80vw] font-normal transition-colors duration-200"
+                  className="text-white hover:text-cyan-300 px-3 py-2 rounded-md text-[0.9vw] transition-colors duration-200"
                 >
                   {item.name}
                 </a>
@@ -40,8 +39,8 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex">
-            <button className="hover:bg-blue-500 text-white flex items-center font-medium py-1.5 px-4 rounded-xl transition-colors duration-200 text-[0.80vw]">
-              <div className="mr-2 w-2 h-2 rounded-full bg-green-400"></div>
+            <button className="hover:bg-gray-100 text-white hover:text-black flex items-center font-medium py-1.5 px-4 rounded-xl transition-colors duration-200 text-[0.80vw]">
+              <div className="mr-2 w-2 h-2 rounded-full bg-cyan-400"></div>
               <span>Contáctanos</span>
             </button>
           </div>
@@ -50,7 +49,7 @@ export default function Navbar() {
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-blue-500 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
               aria-expanded={isMenuOpen}
             >
               <span className="sr-only">Abrir menú principal</span>
@@ -97,13 +96,13 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="block px-4 py-3 text-white hover:bg-white/10 hover:text-blue-500 transition-colors duration-200 text-sm font-medium"
+              className="block px-4 py-3 text-white hover:bg-white/10 hover:text-cyan-300 transition-colors duration-200 text-sm font-medium"
             >
               {item.name}
             </a>
           ))}
           <div className="px-4 py-3">
-            <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-sm">
+            <button className="w-full bg-gray-200 hover:bg-cyan-300 text-black font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-sm">
               Contáctanos
             </button>
           </div>
