@@ -101,7 +101,7 @@ export default function Component() {
                   <h4 className="text-lg sm:text-[1.75vw] font-bold mb-2">
                     {item.title}
                   </h4>
-                  <span className="text-xs text-gray-600">
+                  <span className="text-[1vw] text-gray-600">
                     {item.description}
                   </span>
                 </div>
