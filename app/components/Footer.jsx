@@ -1,11 +1,3 @@
-import React from 'react';
-import {
-  FaEnvelope,
-  FaPhone,
-  FaMapMarkerAlt,
-  FaBuilding
-} from 'react-icons/fa';
-
 export default function Footer() {
   return (
     <footer
