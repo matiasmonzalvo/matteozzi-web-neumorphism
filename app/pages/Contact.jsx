@@ -146,12 +146,12 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-white text-black p-4 sm:px-8 sm:py-32 relative overflow-hidden"
+      className="bg-white text-black lg:p-4 relative overflow-hidden h-screen lg:py-40"
       data-scroll-section
     >
       {/* PRIMERA MITAD */}
-      <div className="flex flex-col lg:flex-row items-start justify-between lg:w-[80%] mx-auto relative z-10">
-        <div className="flex flex-col items-start justify-start lg:w-[50%] ">
+      <div className="flex flex-col lg:flex-row items-start justify-between h-full w-[90%] lg:w-[80%] mx-auto relative z-10">
+        <div className="flex flex-col items-start justify-center lg:w-[50%] h-full">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             Contacto
           </span>
@@ -176,8 +176,8 @@ export default function Contact() {
           </div>
         </div>
         {/* FORM */}
-        <div className="w-full lg:w-[50%] mt-8 lg:my-auto ">
-          <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="w-full lg:w-[50%] mt-4 h-[100%]">
+          <form onSubmit={handleSubmit} className="relative h-full flex flex-col justify-center space-y-6">
             <div>
               <label
                 htmlFor="nombre"

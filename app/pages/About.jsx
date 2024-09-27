@@ -37,10 +37,10 @@ export default function Component() {
   return (
     <section
       id="about"
-      className="bg-white text-black p-4 sm:px-8 sm:pt-16 pb-8 relative overflow-hidden"
+      className="bg-white text-black lg:p-4 sm:pt-16 pb-8 relative overflow-hidden"
       data-scroll-section
     >
-      <div className="lg:w-[80%] mx-auto relative z-10 py-6 sm:py-32">
+      <div className="lg:w-[80%] w-[90%] mx-auto relative z-10 py-6 sm:py-32">
         {/* LADO IZQUIERDO */}
         <div
           className="about flex flex-col items-start justify-center w-full sm:w-[27.5%] "
@@ -98,10 +98,10 @@ export default function Component() {
             {items.map((item, index, array) => (
               <div key={index}>
                 <div className="flex flex-col text-black py-4 sm:py-6">
-                  <h4 className="text-lg sm:text-[1.75vw] font-bold mb-2">
+                  <h4 className="text-[5vw] lg:text-[1.75vw] font-bold mb-2">
                     {item.title}
                   </h4>
-                  <span className="text-[1vw] text-gray-600">
+                  <span className="text-[3vw] lg:text-[1vw] text-gray-600">
                     {item.description}
                   </span>
                 </div>
