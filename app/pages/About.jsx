@@ -98,10 +98,10 @@ export default function Component() {
             {items.map((item, index, array) => (
               <div key={index}>
                 <div className="flex flex-col text-black py-4 sm:py-6">
-                  <h4 className="text-[5vw] lg:text-[1.75vw] font-bold mb-2">
+                  <h4 className="text-[5vw] sm:text-[1.75vw] font-bold mb-2">
                     {item.title}
                   </h4>
-                  <span className="text-[3vw] lg:text-[1vw] text-gray-600">
+                  <span className="text-[3vw] sm:text-[1vw] text-gray-600">
                     {item.description}
                   </span>
                 </div>
