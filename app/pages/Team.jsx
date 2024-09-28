@@ -1,6 +1,27 @@
 import { FaLinkedin } from 'react-icons/fa';
+import { useEffect } from 'react';
 
-const Team = () => {
+export default function Team() {
+  useEffect(() => {
+    const updateScrollSpeed = () => {
+      const viewportWidth = window.innerWidth;
+      const elements = document.querySelectorAll('.team');
+
+      elements.forEach((element) => {
+        if (viewportWidth < 1024) {
+          element.setAttribute('data-scroll-speed', '0');
+        }
+      });
+    };
+
+    updateScrollSpeed();
+    window.addEventListener('resize', updateScrollSpeed);
+
+    return () => {
+      window.removeEventListener('resize', updateScrollSpeed);
+    };
+  }, []);
+
   return (
     <section
       id="team"
@@ -8,7 +29,12 @@ const Team = () => {
       data-scroll-section
     >
       <div className="w-[80%] mx-auto relative z-10 py-6 sm:pt-16">
-        <div className="flex flex-col items-start justify-start w-full">
+        <div
+          className="team flex flex-col items-start justify-start w-full"
+          data-scroll
+          data-scroll-speed="0.5"
+          data-scroll-direction="horizontal"
+        >
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             Team
           </span>
@@ -21,7 +47,12 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center mt-16 text-center">
+        <div
+          className="team flex flex-col items-center justify-center mt-16 text-center"
+          data-scroll
+          data-scroll-speed="-0.5"
+          data-scroll-direction="horizontal"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:w-[80%] text-center mt-16">
             {/* CARD1 */}
             <div className="h-[400px]">
@@ -100,6 +131,4 @@ const Team = () => {
       </div>
     </section>
   );
-};
-
-export default Team;
+}
