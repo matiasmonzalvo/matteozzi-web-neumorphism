@@ -25,15 +25,15 @@ const Hero = () => {
         />
       </div>
       {/* Contenido central */}
-      <div className="flex flex-col items-center text-center relative w-[90%] lg:w-[80%] h-auto my-auto z-10 gap-4">
+      <div className="flex flex-col items-center justify-center text-center relative w-[90%] lg:w-[80%] h-auto my-auto z-20 px-4">
         <h1 className="lg:w-[75%] text-[8.5vw] md:text-[5vw] leading-[1.1] font-semibold bg-gradient-to-br from-white via-white to-gray-400 text-transparent bg-clip-text">
           Tu socio confiable para un éxito sin fronteras.
         </h1>
-        <p className="md:w-[45%] text-[3.5vw] md:text-[1vw] leading-[1.3] text-gray-100 tracking-wide">
+        <p className="w-[45%] text-sm lg:text-[1vw] leading-[1.3] text-gray-100 tracking-wide mt-4">
           Simplificamos el comercio internacional a través de servicios
           aduaneros, logísticos y asesoría estratégica.
         </p>
-        <div className="mt-2 flex flex-col sm:flex-row items-center justify-center">
+        <div className="mt-12">
           <a
             href="#contacto"
             className="border border-gray-300 text-white px-5 py-3 rounded-xl lg:text-lg text-base hover:bg-gray-300 hover:text-black transition duration-300"
@@ -42,7 +42,6 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      Marquee
       {/* <div className="w-full absolute bottom-0 left-0 z-50">
         <Marquee className="opacity-100 filter-none">
           <Image
