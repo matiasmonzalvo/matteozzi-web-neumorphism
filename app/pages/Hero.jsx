@@ -26,17 +26,17 @@ const Hero = () => {
       </div>
       {/* Contenido central */}
       <div className="flex flex-col items-center justify-center text-center relative w-[90%] lg:w-[80%] h-auto my-auto z-20 px-4">
-        <h1 className="lg:w-[75%] text-[8.5vw] md:text-[5vw] leading-[1.1] font-semibold bg-gradient-to-br from-white via-white to-gray-400 text-transparent bg-clip-text">
+        <h1 className="w-full lg:w-[80%] text-[8.5vw] md:text-[5.5vw] leading-[1.1] font-semibold bg-gradient-to-br from-white via-white to-gray-400 text-transparent bg-clip-text">
           Tu socio confiable para un éxito sin fronteras.
         </h1>
-        <p className="w-[45%] text-sm lg:text-[1vw] leading-[1.3] text-gray-100 tracking-wide mt-4">
+        <p className="w-full lg:w-[45%] text-sm lg:text-[1vw] leading-[1.3] text-gray-100 tracking-wider mt-4">
           Simplificamos el comercio internacional a través de servicios
           aduaneros, logísticos y asesoría estratégica.
         </p>
-        <div className="mt-12">
+        <div className="mt-8 lg:mt-10">
           <a
             href="#contacto"
-            className="border border-gray-300 text-white px-5 py-3 rounded-xl lg:text-lg text-base hover:bg-gray-300 hover:text-black transition duration-300"
+            className="border border-gray-300 text-white px-3 py-2 sm:px-5 sm:py-3 rounded-xl sm:text-lg text-sm hover:bg-gray-300 hover:text-black transition duration-300"
           >
             Contactar
           </a>
