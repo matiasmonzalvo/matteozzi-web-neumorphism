@@ -41,7 +41,7 @@ export default function Team() {
           <h1 className="text-3xl sm:text-[6.5vw] font-bold leading-tight sm:leading-[1]">
             Nuestro Equipo
           </h1>
-          <p className="text-sm sm:text-[0.9vw] text-gray-600 mt-4 sm:mt-6">
+          <p className="text-sm lg:text-[0.9vw] text-gray-600 mt-4 sm:mt-6">
             Conformado por profesionales altamente capacitados y comprometidos
             con la innovación y el éxito de cada proyecto.
           </p>
@@ -53,7 +53,7 @@ export default function Team() {
           data-scroll-speed="-0.5"
           data-scroll-direction="horizontal"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:w-[80%] text-center mt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-8 w-[90%] lg:w-[80%] text-center mt-16">
             {/* CARD1 */}
             <div className="h-[400px]">
               <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-emerald-100 to-emerald-600">
@@ -61,9 +61,9 @@ export default function Team() {
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute top-3 right-3 z-30 text-gray-50 hover:text-gray-100"
+                  className="absolute top-3 right-3 z-10 text-gray-50 hover:text-gray-100"
                 >
-                  <FaLinkedin className="w-8 h-8" />
+                  <FaLinkedin className="w-5 h-5 sm:w-8 sm:h-8" />
                 </a>
                 <img
                   src="/member1.png"
@@ -75,7 +75,7 @@ export default function Team() {
                 Tomás Agustín Matteozzi
               </h3>
               <span className="text-sm sm:text-lg text-gray-600 mt-4 sm:mt-6 uppercase">
-                CEO & Fundador de la empresa
+                CEO
               </span>
             </div>
             {/* CARD1 */}
@@ -85,9 +85,9 @@ export default function Team() {
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute top-3 right-3 z-30 text-gray-50 hover:text-gray-100"
+                  className="absolute top-3 right-3 z-10 text-gray-50 hover:text-gray-100"
                 >
-                  <FaLinkedin className="w-8 h-8" />
+                  <FaLinkedin className="w-5 h-5 sm:w-8 sm:h-8" />
                 </a>
                 <img
                   src="/member1.png"
@@ -99,7 +99,7 @@ export default function Team() {
                 Tomás Agustín Matteozzi
               </h3>
               <span className="text-sm sm:text-lg text-gray-600 mt-4 sm:mt-6 uppercase">
-                CEO & Fundador de la empresa
+                Fundador de la empresa
               </span>
             </div>
             {/* CARD1 */}
@@ -109,9 +109,9 @@ export default function Team() {
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute top-3 right-3 z-30 text-gray-50 hover:text-gray-100"
+                  className="absolute top-3 right-3 z-10 text-gray-50 hover:text-gray-100"
                 >
-                  <FaLinkedin className="w-8 h-8" />
+                  <FaLinkedin className="w-5 h-5 sm:w-8 sm:h-8" />
                 </a>
                 <img
                   src="/member1.png"
@@ -123,7 +123,7 @@ export default function Team() {
                 Tomás Agustín Matteozzi
               </h3>
               <span className="text-sm sm:text-lg text-gray-600 mt-4 sm:mt-6 uppercase">
-                CEO & Fundador de la empresa
+                CTO
               </span>
             </div>
           </div>

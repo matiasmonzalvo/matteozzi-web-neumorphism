@@ -146,7 +146,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-white text-black lg:p-4 relative overflow-hidden lg:py-32"
+      className="bg-white text-black lg:p-4 relative overflow-hidden lg:py-32 pb-6"
       data-scroll-section
     >
       {/* PRIMERA MITAD */}

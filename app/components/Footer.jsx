@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer
-      className="w-full border-t border-gray-300 text-black py-12 lg:py-16"
+      className="w-full border-t border-gray-300 text-black pt-12 lg:pt-16 pb-6 lg:pb-10"
       data-scroll-section
     >
       <div className="container mx-auto px-4 lg:px-8 w-[90%] lg:w-[80%]">
