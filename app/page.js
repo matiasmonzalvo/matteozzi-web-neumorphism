@@ -1,8 +1,6 @@
 'use client'
-
-import { useRef, useEffect, useState } from 'react'
+import { useRef } from 'react'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import { PaperAirplaneIcon, MoonIcon, SunIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 import './globals.css'
 import Footer from './components/Footer'
