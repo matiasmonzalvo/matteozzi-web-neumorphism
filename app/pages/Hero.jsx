@@ -36,7 +36,7 @@ const Hero = () => {
         <div className="mt-8 lg:mt-10">
           <a
             href="#contacto"
-            className="border border-gray-300 text-white px-3 py-2 sm:px-5 sm:py-3 rounded-xl lg:text-[1vw] text-sm hover:bg-gray-300 hover:text-black transition duration-300"
+            className="border border-gray-300 text-white px-3 py-2 sm:px-5 sm:py-3 rounded-lg sm:rounded-xl lg:text-[1vw] text-sm hover:bg-gray-300 hover:text-black transition duration-300"
           >
             Contactar
           </a>

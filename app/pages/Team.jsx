@@ -32,7 +32,7 @@ export default function Team() {
         <div
           className="team flex flex-col items-start justify-start w-full"
           data-scroll
-          data-scroll-speed="0.5"
+          data-scroll-speed="0.25"
           data-scroll-direction="horizontal"
         >
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
@@ -50,7 +50,7 @@ export default function Team() {
         <div
           className="team flex flex-col items-center justify-center mt-16 text-center"
           data-scroll
-          data-scroll-speed="-0.5"
+          data-scroll-speed="-0.25"
           data-scroll-direction="horizontal"
         >
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-8 w-[90%] lg:w-[80%] text-center mt-16">
