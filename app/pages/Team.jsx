@@ -29,12 +29,7 @@ export default function Team() {
       data-scroll-section
     >
       <div className="w-[80%] mx-auto relative z-10 py-6 sm:pt-16">
-        <div
-          className="team flex flex-col items-start justify-start w-full"
-          data-scroll
-          data-scroll-speed="0.25"
-          data-scroll-direction="horizontal"
-        >
+        <div className="team flex flex-col items-start justify-start w-full">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             Team
           </span>
@@ -47,12 +42,7 @@ export default function Team() {
           </p>
         </div>
 
-        <div
-          className="team flex flex-col items-center justify-center mt-16 text-center"
-          data-scroll
-          data-scroll-speed="-0.25"
-          data-scroll-direction="horizontal"
-        >
+        <div className="team flex flex-col items-center justify-center mt-16 text-center">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-8 w-[90%] lg:w-[80%] text-center mt-16">
             {/* CARD1 */}
             <div className="h-[400px]">
@@ -63,7 +53,7 @@ export default function Team() {
                   rel="noopener noreferrer"
                   className="absolute top-3 right-3 z-30 text-gray-50 hover:text-gray-100"
                 >
-                  <FaLinkedin className="w-5 h-5 sm:w-8 sm:h-8" />
+                  <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
                 </a>
                 <img
                   src="/member1.png"
@@ -87,7 +77,7 @@ export default function Team() {
                   rel="noopener noreferrer"
                   className="absolute top-3 right-3 z-30 text-gray-50 hover:text-gray-100"
                 >
-                  <FaLinkedin className="w-5 h-5 sm:w-8 sm:h-8" />
+                  <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
                 </a>
                 <img
                   src="/member1.png"
@@ -111,7 +101,7 @@ export default function Team() {
                   rel="noopener noreferrer"
                   className="absolute top-3 right-3 z-30 text-gray-50 hover:text-gray-100"
                 >
-                  <FaLinkedin className="w-5 h-5 sm:w-8 sm:h-8" />
+                  <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
                 </a>
                 <img
                   src="/member1.png"
