@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="w-screen h-screen sm:py-[10vw] py-[30vw]  lg:py-0 relative flex items-center justify-center overflow-hidden"
+      className="w-screen h-screen sm:py-[10vw] py-[30vw] lg:py-0 relative flex items-center justify-center overflow-hidden"
       data-scroll-section
     >
       <div className="w-full h-full absolute top-0 left-0 filter-shadow opacity-80 z-10"></div>
@@ -42,57 +42,88 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      {/* Marquee de imágenes */}
       <div className="w-full absolute bottom-0 left-0 z-50">
         <Marquee className="opacity-100 filter-none">
-          <Image
-            className="mr-40"
-            src="/clientes/aerolineas.png"
-            width={120}
-            height={120}
-            alt="Aerolineas"
-          />
-          <Image
-            className="mr-40"
-            src="/clientes/coto.png"
-            width={120}
-            height={120}
-            alt="Coto"
-          />
-          <Image
-            className="mr-40"
-            src="/clientes/cnea.png"
-            width={100}
-            height={100}
-            alt="CNEA"
-          />
-          <Image
-            className="mr-40"
-            src="/clientes/cruzdelsur.png"
-            width={150}
-            height={120}
-            alt="Cruz del Sur"
-          />
-          <Image
-            className="mr-40"
-            src="/clientes/abccargas.png"
-            width={120}
-            height={120}
-            alt="ABC Cargas"
-          />
-          <Image
-            className="mr-40"
-            src="/clientes/altec.png"
-            width={120}
-            height={120}
-            alt="Altec"
-          />
-          <Image
-            className="mr-40"
-            src="/clientes/lan.png"
-            width={120}
-            height={120}
-            alt="LAN"
-          />
+          <div className="flex items-center">
+            <Image
+              className="lg:mr-40 mr-10"
+              src="/clientes/aerolineas.png"
+              width={90}
+              height={90}
+              alt="Aerolineas"
+              style={{
+                width: 'clamp(70px, 8vw, 90px)', 
+                height: 'auto',
+              }}
+            />
+            <Image
+              className="lg:mr-40 mr-10"
+              src="/clientes/coto.png"
+              width={90}
+              height={90}
+              alt="Coto"
+              style={{
+                width: 'clamp(70px, 8vw, 90px)',
+                height: 'auto',
+              }}
+            />
+            <Image
+              className="lg:mr-40 mr-10"
+              src="/clientes/cnea.png"
+              width={100}
+              height={100}
+              alt="CNEA"
+              style={{
+                width: 'clamp(70px, 8vw, 100px)',
+                height: 'auto',
+              }}
+            />
+            <Image
+              className="lg:mr-40 mr-10"
+              src="/clientes/cruzdelsur.png"
+              width={90}
+              height={90}
+              alt="Cruz del Sur"
+              style={{
+                width: 'clamp(70px, 10vw, 90px)',
+                height: 'auto',
+              }}
+            />
+            <Image
+              className="lg:mr-40 mr-10"
+              src="/clientes/abccargas.png"
+              width={90}
+              height={90}
+              alt="ABC Cargas"
+              style={{
+                width: 'clamp(70px, 8vw, 90px)',
+                height: 'auto',
+              }}
+            />
+            <Image
+              className="lg:mr-40 mr-10"
+              src="/clientes/altec.png"
+              width={90}
+              height={90}
+              alt="Altec"
+              style={{
+                width: 'clamp(70px, 8vw, 90px)',
+                height: 'auto',
+              }}
+            />
+            <Image
+              className="lg:mr-40 mr-10"
+              src="/clientes/lan.png"
+              width={90}
+              height={90}
+              alt="LAN"
+              style={{
+                width: 'clamp(70px, 8vw, 90px)',
+                height: 'auto',
+              }}
+            />
+          </div>
         </Marquee>
       </div>
     </section>
