@@ -25,10 +25,10 @@ export default function Service() {
   return (
     <section
       id="services"
-      className="bg-white text-black lg:p-4 relative overflow-hidden"
+      className="bg-white text-black h-auto lg:p-4 relative overflow-hidden"
       data-scroll-section
     >
-      <div className="lg:w-[80%] w-[90%] mx-auto relative z-10 py-6 sm:pt-32">
+      <div className="lg:w-[90%] w-[90%] mx-auto relative z-10 py-2 pt-12">
         <div className="flex flex-col items-center justify-center w-full text-center">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             ¿Que ofrecemos?
@@ -42,11 +42,11 @@ export default function Service() {
             hasta terrestres, estamos aquí para ayudarte.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center mt-6 lg:mt-16">
+        <div className="flex flex-col items-center justify-center mt-6 lg:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-[100%] lg:w-[90%]">
             {/* CARD1 */}
             <div
-              className="service flex flex-col h-[400px] lg:h-[500px] border border-gray-300 rounded-2xl p-6 hover:shadow-lg justify-between"
+              className="service flex flex-col h-[400px] lg:h-[30vw] border border-gray-300 rounded-2xl py-8 px-6 hover:shadow-lg justify-between"
               data-scroll
               data-scroll-speed="0.6"
             >
@@ -57,7 +57,7 @@ export default function Service() {
                     aria-hidden="true"
                   />
                 </div>
-                <h3 className="text-2xl sm:text-2xl font-bold leading-tight sm:leading-[1]">
+                <h3 className="lg:text-[1.65vw] sm:text-2xl font-bold leading-tight sm:leading-[1]">
                   Despachante de Aduana
                 </h3>
                 <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
@@ -75,7 +75,7 @@ export default function Service() {
             </div>
             {/* CARD2 */}
             <div
-              className="service flex flex-col h-[400px] lg:h-[500px] border border-gray-300 rounded-2xl p-6 hover:shadow-lg justify-between"
+              className="service flex flex-col h-[400px] lg:h-[30vw] border border-gray-300 rounded-2xl py-8 px-6 hover:shadow-lg justify-between"
               data-scroll
               data-scroll-speed="0"
             >
@@ -83,7 +83,7 @@ export default function Service() {
                 <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
                   <GiTruck className="text-black text-xl" aria-hidden="true" />
                 </div>
-                <h3 className="text-2xl sm:text-2xl font-bold leading-tight sm:leading-[1]">
+                <h3 className="lg:text-[1.65vw] sm:text-2xl font-bold leading-tight sm:leading-[1]">
                   Transporte Aduanero
                 </h3>
                 <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
@@ -100,7 +100,7 @@ export default function Service() {
             </div>
             {/* CARD3 */}
             <div
-              className="service flex flex-col h-[400px] lg:h-[500px] border border-gray-300 rounded-2xl p-6  hover:shadow-lg justify-between"
+              className="service flex flex-col h-[400px] lg:h-[30vw] border border-gray-300 rounded-2xl py-8 px-6  hover:shadow-lg justify-between"
               data-scroll
               data-scroll-speed="-0.6"
             >
@@ -108,7 +108,7 @@ export default function Service() {
                 <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
                   <GiWorld className="text-black text-xl" aria-hidden="true" />
                 </div>
-                <h3 className="text-2xl sm:text-2xl font-bold leading-tight sm:leading-[1]">
+                <h3 className="lg:text-[1.65vw] sm:text-2xl font-bold leading-tight sm:leading-[1]">
                   Cobertura global
                 </h3>
                 <p className="text-sm lg:text-[0.95vw] text-gray-600 flex-grow mt-2">
