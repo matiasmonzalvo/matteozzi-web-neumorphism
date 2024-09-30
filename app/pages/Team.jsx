@@ -61,7 +61,7 @@ export default function Team() {
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute top-3 right-3 z-10 text-gray-50 hover:text-gray-100"
+                  className="absolute top-3 right-3 z-30 text-gray-50 hover:text-gray-100"
                 >
                   <FaLinkedin className="w-5 h-5 sm:w-8 sm:h-8" />
                 </a>
@@ -85,7 +85,7 @@ export default function Team() {
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute top-3 right-3 z-10 text-gray-50 hover:text-gray-100"
+                  className="absolute top-3 right-3 z-30 text-gray-50 hover:text-gray-100"
                 >
                   <FaLinkedin className="w-5 h-5 sm:w-8 sm:h-8" />
                 </a>
@@ -109,7 +109,7 @@ export default function Team() {
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="absolute top-3 right-3 z-10 text-gray-50 hover:text-gray-100"
+                  className="absolute top-3 right-3 z-30 text-gray-50 hover:text-gray-100"
                 >
                   <FaLinkedin className="w-5 h-5 sm:w-8 sm:h-8" />
                 </a>
