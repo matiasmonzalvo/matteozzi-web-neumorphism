@@ -71,11 +71,11 @@ const Hero = () => {
             <Image
               className="lg:mr-40 mr-10"
               src="/clientes/cnea.png"
-              width={100}
-              height={100}
+              width={90}
+              height={90}
               alt="CNEA"
               style={{
-                width: 'clamp(70px, 8vw, 85px)',
+                width: 'clamp(70px, 8vw, 75px)',
                 height: 'auto'
               }}
             />
