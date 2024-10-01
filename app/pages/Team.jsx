@@ -46,7 +46,7 @@ export default function Team() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-8 w-[90%] lg:w-[80%] text-center mt-16">
             {/* CARD1 */}
             <div className="h-[400px]">
-              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-emerald-100 to-emerald-600">
+              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-r from-[#DEE3CD] to-[#93bec7]">
                 <a
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
@@ -70,7 +70,7 @@ export default function Team() {
             </div>
             {/* CARD1 */}
             <div className="h-[400px]">
-              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-sky-100 to-sky-600">
+              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-[#93bec7]">
                 <a
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
@@ -94,7 +94,7 @@ export default function Team() {
             </div>
             {/* CARD1 */}
             <div className="h-[400px]">
-              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-tr from-cyan-100 to-cyan-600">
+              <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-r from-[#93bec7] to-[#46939f]">
                 <a
                   href="https://www.linkedin.com/in/username"
                   target="_blank"
