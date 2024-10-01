@@ -1,4 +1,20 @@
+'use client';
+
+import { useLocomotiveScroll } from 'react-locomotive-scroll';
+
 export default function Footer() {
+  const { scroll } = useLocomotiveScroll();
+
+  const handleScroll = (target) => {
+    if (scroll) {
+      scroll.scrollTo(`#${target}`, {
+        offset: 0,
+        duration: 1000,
+        easing: [0.25, 0.0, 0.35, 1.0]
+      });
+    }
+  };
+
   return (
     <footer
       className="w-full border-t border-gray-300 text-black pt-12 lg:pt-16 pb-6 lg:pb-10"
@@ -18,13 +34,33 @@ export default function Footer() {
                 <h3 className="text-md lg:text-xl font-bold mb-2">Links</h3>
                 <ul className="space-y-2">
                   <li className="flex items-center hover:underline cursor-pointer">
-                    <a className="text-sm">Nosotros</a>
+                    <a
+                      onClick={() => handleScroll('about')}
+                      className="text-sm"
+                    >
+                      Nosotros
+                    </a>
                   </li>
                   <li className="flex items-center hover:underline cursor-pointer">
-                    <a className="text-sm">Servicios</a>
+                    <a
+                      onClick={() => handleScroll('services')}
+                      className="text-sm"
+                    >
+                      Servicios
+                    </a>
                   </li>
                   <li className="flex items-center hover:underline cursor-pointer">
-                    <a className="text-sm">Contacto</a>
+                    <a onClick={() => handleScroll('team')} className="text-sm">
+                      Equipo
+                    </a>
+                  </li>
+                  <li className="flex items-center hover:underline cursor-pointer">
+                    <a
+                      onClick={() => handleScroll('contact')}
+                      className="text-sm"
+                    >
+                      Contacto
+                    </a>
                   </li>
                 </ul>
               </div>
