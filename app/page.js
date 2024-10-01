@@ -1,7 +1,6 @@
 'use client';
 import { useRef } from 'react';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
 import './globals.css';
 import Footer from './components/Footer';
 import Hero from './pages/Hero';
@@ -19,11 +18,11 @@ export default function Home() {
           smooth: true,
           smartphone: {
             breakpoint: 768,
-            smooth: false
+            smooth: true
           },
           tablet: {
             breakpoint: 1024,
-            smooth: false
+            smooth: true
           }
         }}
         watch={[]}
