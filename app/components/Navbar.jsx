@@ -1,8 +1,7 @@
 'use client';
-import { useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+import { useState, useEffect } from 'react';
 
-export default function Component() {
+export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
@@ -12,53 +11,70 @@ export default function Component() {
     { name: 'Equipo', href: 'team' }
   ];
 
+  const handleScroll = (target) => {
+    const element = document.getElementById(target);
+    if (element) {
+      const offset = 64;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024 && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [isMenuOpen]);
+
   return (
     <nav className="bg-transparent w-full py-6 fixed z-[40]">
       <div className="lg:w-[80%] w-[90%] mx-auto px-6 rounded-xl glass relative">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <ScrollLink
-              to={'hero'}
-              smooth={true}
-              duration={500}
-              offset={-64}
+            <button
+              onClick={() => handleScroll('hero')}
               className="font-bold text-xl leading-tight text-white cursor-pointer"
             >
               ML
-            </ScrollLink>
+            </button>
           </div>
 
           {/* Desktop menu centrado en el medio del div */}
           <div className="hidden lg:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="flex space-x-2">
               {menuItems.map((item) => (
-                <ScrollLink
+                <button
                   key={item.name}
-                  to={item.href}
-                  smooth={true}
-                  duration={500}
-                  offset={-64}
+                  onClick={() => handleScroll(item.href)}
                   className="text-white hover:text-cyan-300 px-3 py-2 rounded-md text-[0.9vw] transition-colors duration-200 cursor-pointer"
                 >
                   {item.name}
-                </ScrollLink>
+                </button>
               ))}
             </div>
           </div>
 
           {/* CTA Button */}
           <div className="hidden lg:flex">
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              duration={500}
-              offset={-64}
+            <button
+              onClick={() => handleScroll('contact')}
               className="hover:bg-gray-100 text-white hover:text-black flex items-center font-medium py-1.5 px-4 rounded-xl transition-colors duration-200 text-[0.9vw] cursor-pointer"
             >
               <div className="mr-2 w-2 h-2 rounded-full bg-cyan-400"></div>
               <span>Contáctanos</span>
-            </ScrollLink>
+            </button>
           </div>
 
           {/* Mobile menu button */}
@@ -109,27 +125,21 @@ export default function Component() {
       <div className={`${isMenuOpen ? 'block' : 'hidden'} lg:hidden mt-2`}>
         <div className="w-[90%] mx-auto rounded-xl glass overflow-hidden shadow-lg">
           {menuItems.map((item) => (
-            <ScrollLink
+            <button
               key={item.name}
-              to={item.href}
-              smooth={true}
-              duration={500}
-              offset={-64}
-              className="block px-4 py-3 text-white hover:bg-white/10 hover:text-cyan-300 transition-colors duration-200 text-sm font-medium cursor-pointer"
+              onClick={() => handleScroll(item.href)}
+              className="block w-full text-left px-4 py-3 text-white hover:bg-white/10 hover:text-cyan-300 transition-colors duration-200 text-sm font-medium cursor-pointer"
             >
               {item.name}
-            </ScrollLink>
+            </button>
           ))}
           <div className="px-4 py-3 w-full">
-            <ScrollLink
-              to="contact"
-              smooth={true}
-              duration={500}
-              offset={-64}
+            <button
+              onClick={() => handleScroll('contact')}
               className="bg-gray-200 hover:bg-cyan-300 text-black font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-sm cursor-pointer w-full block text-center"
             >
               Contáctanos
-            </ScrollLink>
+            </button>
           </div>
         </div>
       </div>
