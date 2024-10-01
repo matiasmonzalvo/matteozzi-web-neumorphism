@@ -29,11 +29,11 @@ export default function Home() {
         options={{
           smooth: true,
           smartphone: {
-            breakpoint: 0,
+            breakpoint: 768,
             smooth: false
           },
           tablet: {
-            breakpoint: 0,
+            breakpoint: 1024,
             smooth: false
           }
         }}
