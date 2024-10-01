@@ -1,8 +1,10 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { scroll } = useLocomotiveScroll();
 
   const menuItems = [
     { name: 'Inicio', href: 'hero' },
@@ -12,15 +14,11 @@ export default function Navigation() {
   ];
 
   const handleScroll = (target) => {
-    const element = document.getElementById(target);
-    if (element) {
-      const offset = 64;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
+    if (scroll) {
+      scroll.scrollTo(`#${target}`, {
+        offset: 0,
+        duration: 1000,
+        easing: [0.25, 0.0, 0.35, 1.0]
       });
     }
     setIsMenuOpen(false);
@@ -51,7 +49,7 @@ export default function Navigation() {
             </button>
           </div>
 
-          {/* Desktop menu centrado en el medio del div */}
+          {/* Desktop menu */}
           <div className="hidden lg:flex absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="flex space-x-2">
               {menuItems.map((item) => (

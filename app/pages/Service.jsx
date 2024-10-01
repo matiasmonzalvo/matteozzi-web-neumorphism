@@ -1,7 +1,21 @@
 import React, { useEffect } from 'react';
 import { GiCommercialAirplane, GiTruck, GiWorld } from 'react-icons/gi';
+import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 export default function Service() {
+  const { scroll } = useLocomotiveScroll();
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    if (scroll) {
+      scroll.scrollTo('#contact', {
+        offset: 0,
+        duration: 1000,
+        easing: [0.25, 0.0, 0.35, 1.0]
+      });
+    }
+  };
+
   useEffect(() => {
     const updateScrollSpeed = () => {
       const viewportWidth = window.innerWidth;
@@ -69,7 +83,10 @@ export default function Service() {
                   para exportación, garantizando un proceso ágil y eficiente.
                 </p>
               </div>
-              <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
+              <button
+                onClick={handleContactClick}
+                className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400"
+              >
                 Consultar →
               </button>
             </div>
@@ -94,7 +111,10 @@ export default function Service() {
                   asegurar una logística eficiente y sin contratiempos.
                 </p>
               </div>
-              <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
+              <button
+                onClick={handleContactClick}
+                className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400"
+              >
                 Consultar →
               </button>
             </div>
@@ -120,7 +140,10 @@ export default function Service() {
                   precisas.
                 </p>
               </div>
-              <button className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400">
+              <button
+                onClick={handleContactClick}
+                className="w-full bg-black text-white hover:bg-cyan-500 py-2 rounded-xl mt-4 font-semibold transition duration-400"
+              >
                 Consultar →
               </button>
             </div>

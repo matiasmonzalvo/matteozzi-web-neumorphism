@@ -8,6 +8,7 @@ import About from './pages/About';
 import Service from './pages/Service';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import Navigation from './components/Navbar';
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -29,6 +30,7 @@ export default function Home() {
         containerRef={containerRef}
       >
         <div data-scroll-container ref={containerRef}>
+          <Navigation />
           <Hero />
           <About />
           <Service />
