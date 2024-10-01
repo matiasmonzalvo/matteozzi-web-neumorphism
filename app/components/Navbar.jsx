@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
-export default function Navbar() {
+export default function Component() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
@@ -120,13 +120,13 @@ export default function Navbar() {
               {item.name}
             </ScrollLink>
           ))}
-          <div className="px-4 py-3">
+          <div className="px-4 py-3 w-full">
             <ScrollLink
               to="contact"
               smooth={true}
               duration={500}
               offset={-64}
-              className="w-full bg-gray-200 hover:bg-cyan-300 text-black font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-sm cursor-pointer"
+              className="bg-gray-200 hover:bg-cyan-300 text-black font-medium py-2 px-4 rounded-lg transition-colors duration-200 text-sm cursor-pointer w-full block text-center"
             >
               Contáctanos
             </ScrollLink>
