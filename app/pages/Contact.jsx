@@ -55,7 +55,7 @@ const contactInfo = [
   {
     icon: (
       <svg
-        className="w-6 h-6 text-gray-600 mr-2"
+        className="w-12 h-12 text-gray-600 mr-2"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -164,7 +164,7 @@ export default function Contact() {
             cualquier consulta sobre comercio internacional, despacho de aduanas
             o transporte aduanero.
           </p>
-          <div className="w-full space-y-4">
+          <div className="w-[60%] space-y-4">
             {contactInfo.map((info, index) => (
               <div key={index} className="flex items-center">
                 {info.icon}
