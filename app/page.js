@@ -1,14 +1,15 @@
-'use client';
-import { useRef } from 'react';
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
-import './globals.css';
-import Footer from './components/Footer';
-import Hero from './pages/Hero';
-import About from './pages/About';
-import Service from './pages/Service';
-import Team from './pages/Team';
-import Contact from './pages/Contact';
-import Navigation from './components/Navbar';
+"use client";
+import { useRef } from "react";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import "./globals.css";
+import Footer from "./components/Footer";
+import Hero from "./pages/Hero";
+import About from "./pages/About";
+import Service from "./pages/Service";
+import Team from "./pages/Team";
+import Contact from "./pages/Contact";
+import Navigation from "./components/Navbar";
+import Partners from "./pages/Partners";
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -19,12 +20,12 @@ export default function Home() {
           smooth: true,
           smartphone: {
             breakpoint: 768,
-            smooth: true
+            smooth: true,
           },
           tablet: {
             breakpoint: 1024,
-            smooth: true
-          }
+            smooth: true,
+          },
         }}
         watch={[]}
         containerRef={containerRef}
@@ -35,6 +36,7 @@ export default function Home() {
           <About />
           <Service />
           <Team />
+          <Partners />
           <Contact />
           <Footer />
         </div>
