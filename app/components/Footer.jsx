@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 export default function Footer() {
@@ -22,8 +23,14 @@ export default function Footer() {
     >
       <div className="container mx-auto px-4 lg:px-8 w-[90%] lg:w-[80%]">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
-          <div className="w-full lg:w-[40%] mb-8 lg:mb-0">
-            <h2 className="text-3xl lg:text-4xl font-bold leading-tight mb-2">
+          <div className="w-full lg:w-[40%] mb-8 lg:mb-0 flex flex-row justify-between items-center">
+            <Image
+              src="/logo.png"
+              width={500}
+              height={500}
+              className="w-40 h-40"
+            />
+            <h2 className="text-3xl lg:text-4xl font-bold leading-none mb-2">
               Matteozzi <br />
               Lavilla
             </h2>
@@ -80,7 +87,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-4 border-t border-gray-800 flex flex-col lg:flex-row justify-between items-center">
+        <div className="mt-8 pt-4 border-t border-gray-300 flex flex-col lg:flex-row justify-between items-center">
           <p className="text-sm lg:text-xs text-gray-500 mt-2 lg:mt-0">
             © 2024 Matteozzi Lavilla. All Rights Reserved
           </p>
