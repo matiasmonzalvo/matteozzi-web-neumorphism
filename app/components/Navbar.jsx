@@ -1,6 +1,8 @@
 'use client';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
+import LogoSvg from './LogoSvg';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,12 +42,12 @@ export default function Navigation() {
       <div className="lg:w-[80%] w-[90%] mx-auto px-6 rounded-xl glass relative">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex justify-center items-center">
             <button
               onClick={() => handleScroll('hero')}
               className="font-bold text-xl leading-tight text-white cursor-pointer"
             >
-              ML
+              <LogoSvg />
             </button>
           </div>
 
