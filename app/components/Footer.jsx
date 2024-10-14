@@ -23,12 +23,12 @@ export default function Footer() {
     >
       <div className="container mx-auto px-4 lg:px-8 w-[90%] lg:w-[80%]">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
-          <div className="w-full lg:w-[40%] mb-8 lg:mb-0 flex flex-row justify-between items-center">
+          <div className="w-full lg:w-[40%] mb-10 lg:mb-0 flex flex-row justify-start lg:justify-between items-center gap-6 ">
             <Image
               src="/logo.png"
               width={500}
               height={500}
-              className="w-40 h-40"
+              className="w-24 h-24 sm:w-40 sm:h-40"
             />
             <h2 className="text-3xl lg:text-4xl font-bold leading-none mb-2">
               Matteozzi <br />
