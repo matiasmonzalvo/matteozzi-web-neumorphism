@@ -1,24 +1,24 @@
-import { FaLinkedin } from 'react-icons/fa';
-import { useEffect } from 'react';
+import { FaLinkedin } from "react-icons/fa";
+import { useEffect } from "react";
 
 export default function Team() {
   useEffect(() => {
     const updateScrollSpeed = () => {
       const viewportWidth = window.innerWidth;
-      const elements = document.querySelectorAll('.team');
+      const elements = document.querySelectorAll(".team");
 
       elements.forEach((element) => {
         if (viewportWidth < 1024) {
-          element.setAttribute('data-scroll-speed', '0');
+          element.setAttribute("data-scroll-speed", "0");
         }
       });
     };
 
     updateScrollSpeed();
-    window.addEventListener('resize', updateScrollSpeed);
+    window.addEventListener("resize", updateScrollSpeed);
 
     return () => {
-      window.removeEventListener('resize', updateScrollSpeed);
+      window.removeEventListener("resize", updateScrollSpeed);
     };
   }, []);
 
@@ -56,7 +56,7 @@ export default function Team() {
                   <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
                 </a>
                 <img
-                  src="/member1.png"
+                  src="/member2.png"
                   alt="Member"
                   className="absolute z-20 bottom-0 left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] rounded-xl object-cover"
                 />
@@ -80,7 +80,7 @@ export default function Team() {
                   <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
                 </a>
                 <img
-                  src="/member1.png"
+                  src="/member3.png"
                   alt="Member"
                   className="absolute z-20 bottom-0 left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] rounded-xl object-cover"
                 />
@@ -104,7 +104,7 @@ export default function Team() {
                   <FaLinkedin className="w-5 h-5 sm:w-6 sm:h-6" />
                 </a>
                 <img
-                  src="/member1.png"
+                  src="/member4.png"
                   alt="Member"
                   className="absolute z-20 bottom-0 left-1/2 transform -translate-x-1/2 w-[400px] h-[400px] rounded-xl object-cover"
                 />
