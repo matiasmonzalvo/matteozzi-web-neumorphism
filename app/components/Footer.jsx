@@ -26,6 +26,7 @@ export default function Footer() {
           <div className="w-full lg:w-[40%] mb-10 lg:mb-0 flex flex-row justify-start lg:justify-between items-center gap-6 ">
             <Image
               src="/logo.png"
+              alt="logo"
               width={500}
               height={500}
               className="w-24 h-24 sm:w-40 sm:h-40"
