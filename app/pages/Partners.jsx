@@ -1,10 +1,11 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Partners() {
   return (
     <section
       id="services"
-      className="bg-white text-black h-auto lg:p-4 relative h-screen flex items-center justify-center"
+      className="bg-white text-black lg:p-4 relative h-screen flex items-center justify-center"
       data-scroll-section
     >
       <div className="w-[80%] h-full flex flex-row items-center justify-center">
@@ -20,38 +21,175 @@ export default function Partners() {
         </div>
         <div className="w-3/5 h-full flex flex-row items-center justify-end">
           <div className="w-[90%] h-[75%] mt-6 flex flex-col items-center justify-center gap-3">
-            <div
-              className="w-full h-1/3 flex flex-row gap-3"
-              data-scroll
-              data-scroll-speed="0.5"
-              data-scroll-direction="horizontal"
-            >
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
+            <div className="w-full h-[10vw] flex flex-row gap-3">
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                <Image
+                  className="invert"
+                  src="/clientes/aerolineas.png"
+                  width={900}
+                  height={900}
+                  alt="Aerolineas"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                <Image
+                  className="invert"
+                  src="/clientes/coto.png"
+                  width={900}
+                  height={900}
+                  alt="Coto"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                <Image
+                  className="invert"
+                  src="/clientes/cnea.png"
+                  width={900}
+                  height={900}
+                  alt="CNEA"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                <Image
+                  className="invert"
+                  src="/clientes/lan.png"
+                  width={900}
+                  height={900}
+                  alt="Lan"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
             </div>
-            <div
-              className="w-full h-1/3 flex flex-row gap-3"
-              data-scroll
-              data-scroll-speed="-0.5"
-              data-scroll-direction="horizontal"
-            >
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
+            <div className="w-full h-[10vw] flex flex-row gap-3">
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                {" "}
+                <Image
+                  className="invert"
+                  src="/clientes/altec.png"
+                  width={900}
+                  height={900}
+                  alt="Altec"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                {" "}
+                <Image
+                  className="invert"
+                  src="/clientes/abccargas.png"
+                  width={900}
+                  height={900}
+                  alt="Abc Cargas"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                {" "}
+                <Image
+                  className="invert"
+                  src="/clientes/cruzdelsur.png"
+                  width={900}
+                  height={900}
+                  alt="Cruz del sur"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                {" "}
+                <Image
+                  className="invert"
+                  src="/clientes/aerolineas.png"
+                  width={900}
+                  height={900}
+                  alt="Aerolineas"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
             </div>
-            <div
-              className="w-full h-1/3 flex flex-row gap-3"
-              data-scroll
-              data-scroll-speed="0.5"
-              data-scroll-direction="horizontal"
-            >
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl"></div>
+            <div className="w-full h-[10vw] flex flex-row gap-3">
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                {" "}
+                <Image
+                  className="invert"
+                  src="/clientes/aerolineas.png"
+                  width={90}
+                  height={90}
+                  alt="Aerolineas"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                {" "}
+                <Image
+                  className="invert"
+                  src="/clientes/aerolineas.png"
+                  width={90}
+                  height={90}
+                  alt="Aerolineas"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                {" "}
+                <Image
+                  className="invert"
+                  src="/clientes/aerolineas.png"
+                  width={90}
+                  height={90}
+                  alt="Aerolineas"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
+                {" "}
+                <Image
+                  className="invert"
+                  src="/clientes/aerolineas.png"
+                  width={90}
+                  height={90}
+                  alt="Aerolineas"
+                  style={{
+                    width: "80%",
+                    height: "auto",
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
