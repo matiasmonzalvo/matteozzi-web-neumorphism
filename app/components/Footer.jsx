@@ -23,7 +23,7 @@ export default function Footer() {
     >
       <div className="container mx-auto px-4 lg:px-8 w-[90%] lg:w-[80%]">
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
-          <div className="w-full lg:w-[40%] mb-10 lg:mb-0 flex flex-row justify-start lg:justify-between items-center gap-6 ">
+          <div className="w-full lg:w-[40%] mb-10 lg:mb-0 flex flex-row justify-start items-center gap-6 lg:gap-10 ">
             <Image
               src="/logo.png"
               alt="logo"
