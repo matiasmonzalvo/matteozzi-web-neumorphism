@@ -55,7 +55,7 @@ const contactInfo = [
   {
     icon: (
       <svg
-        className="w-12 h-12 text-gray-600 mr-2"
+        className="w-6 h-6 text-gray-600 mr-2"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -75,7 +75,7 @@ const contactInfo = [
         />
       </svg>
     ),
-    text: 'Mitre 125, 1er Piso, Oficinas 124-125, San Carlos de Bariloche, Argentina'
+    text: 'Mitre 125, 1er Piso, Oficinas 124-125, San Carlos de Bariloche'
   }
 ];
 
@@ -164,11 +164,11 @@ export default function Contact() {
             cualquier consulta sobre comercio internacional, despacho de aduanas
             o transporte aduanero.
           </p>
-          <div className="w-[60%] space-y-4">
+          <div className="w-[80%] space-y-4">
             {contactInfo.map((info, index) => (
-              <div key={index} className="flex items-center">
-                {info.icon}
-                <span className="text-gray-600 text-sm lg:text-base over">
+              <div key={index} className="flex items-start">
+                <div className="flex-shrink-0 w-5 mr-3">{info.icon}</div>
+                <span className="text-gray-600 text-sm lg:text-base">
                   {info.text}
                 </span>
               </div>
