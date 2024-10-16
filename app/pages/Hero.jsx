@@ -5,6 +5,24 @@ import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
+const clients = [
+  { name: 'Aerolineas', src: '/clientes/aerolineas.png' },
+  { name: 'Coto', src: '/clientes/coto.png' },
+  { name: 'CNEA', src: '/clientes/cnea.png' },
+  { name: 'Lan', src: '/clientes/lan.png' },
+  { name: 'Altec', src: '/clientes/altec.png' },
+  { name: 'Abc Cargas', src: '/clientes/abccargas.png' },
+  { name: 'Cruz del sur', src: '/clientes/cruzdelsur.png' },
+  { name: 'Arsat', src: '/clientes/arsat.png' },
+  { name: 'Llao Llao', src: '/clientes/llaollao.png' },
+  { name: 'Cencosud', src: '/clientes/cencosud.png' },
+  { name: 'Flybondi', src: '/clientes/flybondi.png' },
+  { name: 'Invap', src: '/clientes/invap.png' },
+  { name: 'Jet Smart', src: '/clientes/jetsmart.png' },
+  { name: 'Latam', src: '/clientes/latam.png' },
+  { name: 'YPF', src: '/clientes/ypf.png' }
+];
+
 const Hero = () => {
   const { scroll } = useLocomotiveScroll();
 
@@ -60,83 +78,21 @@ const Hero = () => {
       <div className="w-full absolute bottom-0 left-0 z-50">
         <Marquee className="opacity-100 filter-none">
           <div className="flex items-center">
-            <Image
-              className="lg:mr-40 mr-10"
-              src="/clientes/aerolineas.png"
-              width={90}
-              height={90}
-              alt="Aerolineas"
-              style={{
-                width: 'clamp(70px, 8vw, 90px)',
-                height: 'auto'
-              }}
-            />
-            <Image
-              className="lg:mr-40 mr-10"
-              src="/clientes/coto.png"
-              width={90}
-              height={90}
-              alt="Coto"
-              style={{
-                width: 'clamp(70px, 8vw, 90px)',
-                height: 'auto'
-              }}
-            />
-            <Image
-              className="lg:mr-40 mr-10"
-              src="/clientes/cnea.png"
-              width={90}
-              height={90}
-              alt="CNEA"
-              style={{
-                width: 'clamp(70px, 8vw, 75px)',
-                height: 'auto'
-              }}
-            />
-            <Image
-              className="lg:mr-40 mr-10"
-              src="/clientes/cruzdelsur.png"
-              width={90}
-              height={90}
-              alt="Cruz del Sur"
-              style={{
-                width: 'clamp(70px, 10vw, 120px)',
-                height: 'auto'
-              }}
-            />
-            <Image
-              className="lg:mr-40 mr-10"
-              src="/clientes/abccargas.png"
-              width={90}
-              height={90}
-              alt="ABC Cargas"
-              style={{
-                width: 'clamp(70px, 8vw, 90px)',
-                height: 'auto'
-              }}
-            />
-            <Image
-              className="lg:mr-40 mr-10"
-              src="/clientes/altec.png"
-              width={90}
-              height={90}
-              alt="Altec"
-              style={{
-                width: 'clamp(70px, 8vw, 90px)',
-                height: 'auto'
-              }}
-            />
-            <Image
-              className="lg:mr-40 mr-10"
-              src="/clientes/lan.png"
-              width={90}
-              height={90}
-              alt="LAN"
-              style={{
-                width: 'clamp(70px, 8vw, 90px)',
-                height: 'auto'
-              }}
-            />
+            {clients.map((client, index) => (
+              <Image
+                key={index}
+                className="lg:mr-40 mr-10"
+                src={client.src}
+                alt={client.name}
+                width={90}
+                height={90}
+                style={{
+                  objectFit: 'contain',
+                  width: 'clamp(70px, 8vw, 90px)',
+                  height: 'auto'
+                }}
+              />
+            ))}
           </div>
         </Marquee>
       </div>

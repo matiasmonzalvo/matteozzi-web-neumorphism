@@ -12,7 +12,8 @@ export default function Navigation() {
     { name: 'Inicio', href: 'hero' },
     { name: 'Nosotros', href: 'about' },
     { name: 'Servicios', href: 'services' },
-    { name: 'Equipo', href: 'team' }
+    { name: 'Equipo', href: 'team' },
+    { name: 'Clientes', href: 'clients' }
   ];
 
   const handleScroll = (target) => {

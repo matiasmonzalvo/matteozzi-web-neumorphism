@@ -1,197 +1,68 @@
-import Image from "next/image";
-import React from "react";
+'use client';
+
+import Image from 'next/image';
+
+const clients = [
+  { name: 'Aerolineas', src: '/clientes/aerolineas.png' },
+  { name: 'Coto', src: '/clientes/coto.png' },
+  { name: 'CNEA', src: '/clientes/cnea.png' },
+  { name: 'Lan', src: '/clientes/lan.png' },
+  { name: 'Altec', src: '/clientes/altec.png' },
+  { name: 'Abc Cargas', src: '/clientes/abccargas.png' },
+  { name: 'Cruz del sur', src: '/clientes/cruzdelsur.png' },
+  { name: 'Arsat', src: '/clientes/arsat.png' },
+  { name: 'Llao Llao', src: '/clientes/llaollao.png' },
+  { name: 'Cencosud', src: '/clientes/cencosud.png' },
+  { name: 'Flybondi', src: '/clientes/flybondi.png' },
+  { name: 'Invap', src: '/clientes/invap.png' },
+  { name: 'Jet Smart', src: '/clientes/jetsmart.png' },
+  { name: 'Latam', src: '/clientes/latam.png' },
+  { name: 'YPF', src: '/clientes/ypf.png' }
+];
 
 export default function Partners() {
   return (
     <section
-      id="services"
-      className="bg-white text-black lg:p-4 relative h-screen flex items-center justify-center"
+      id="clients"
+      className="bg-white text-black py-16 relative min-h-screen"
       data-scroll-section
     >
-      <div className="w-[80%] h-full flex flex-row items-center justify-center">
-        <div className="w-2/5">
-          <h1 className="text-3xl sm:text-[6.5vw] font-bold leading-[0.9]">
-            Nuestros Clientes
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            pariatur tenetur totam quos, molestiae aut earum quaerat accusamus
-            cupiditate in.
-          </p>
-        </div>
-        <div className="w-3/5 h-full flex flex-row items-center justify-end">
-          <div className="w-[90%] h-[75%] mt-6 flex flex-col items-center justify-center gap-3">
-            <div className="w-full h-[10vw] flex flex-row gap-3">
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                <Image
-                  className="invert"
-                  src="/clientes/aerolineas.png"
-                  width={900}
-                  height={900}
-                  alt="Aerolineas"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                <Image
-                  className="invert"
-                  src="/clientes/coto.png"
-                  width={900}
-                  height={900}
-                  alt="Coto"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                <Image
-                  className="invert"
-                  src="/clientes/cnea.png"
-                  width={900}
-                  height={900}
-                  alt="CNEA"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                <Image
-                  className="invert"
-                  src="/clientes/lan.png"
-                  width={900}
-                  height={900}
-                  alt="Lan"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
+      <div className="lg:w-[80%] w-[90%] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+        <span className="text-sm uppercase tracking-wider text-gray-600 py-1 px-3 border border-gray-600 rounded-xl mb-4">
+          Empresas que confían en nosotros
+        </span>
+        <h1 className="text-3xl sm:text-[6.5vw] font-bold leading-tight sm:leading-[1]">
+          Clientes
+        </h1>
+        <p className="w-[70%] text-sm sm:text-[0.9vw] text-gray-600 mt-4 sm:mt-6">
+          Nuestra lista de clientes refleja la confianza en nuestra capacidad y
+          calidad. Trabajamos directamente con equipos clave de cada
+          organización y abarcamos distintos niveles de la industria,
+          adaptándonos a sus necesidades específicas. Estos representan solo
+          algunos de nuestros clientes más destacados.
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-4 mt-12 lg:w-[80%] w-[90%]">
+          {clients.map((client) => (
+            <div
+              key={client.name}
+              className="flex items-center justify-center w-48 h-48 bg-white border border-gray-300 rounded-xl"
+            >
+              <Image
+                className="invert"
+                src={client.src}
+                width={100}
+                height={100}
+                alt={client.name}
+                style={{
+                  objectFit: 'contain',
+                  width: '100%',
+                  height: '100%',
+                  padding: '1rem'
+                }}
+              />
             </div>
-            <div className="w-full h-[10vw] flex flex-row gap-3">
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                {" "}
-                <Image
-                  className="invert"
-                  src="/clientes/altec.png"
-                  width={900}
-                  height={900}
-                  alt="Altec"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                {" "}
-                <Image
-                  className="invert"
-                  src="/clientes/abccargas.png"
-                  width={900}
-                  height={900}
-                  alt="Abc Cargas"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                {" "}
-                <Image
-                  className="invert"
-                  src="/clientes/cruzdelsur.png"
-                  width={900}
-                  height={900}
-                  alt="Cruz del sur"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                {" "}
-                <Image
-                  className="invert"
-                  src="/clientes/aerolineas.png"
-                  width={900}
-                  height={900}
-                  alt="Aerolineas"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-            </div>
-            <div className="w-full h-[10vw] flex flex-row gap-3">
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                {" "}
-                <Image
-                  className="invert"
-                  src="/clientes/aerolineas.png"
-                  width={90}
-                  height={90}
-                  alt="Aerolineas"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                {" "}
-                <Image
-                  className="invert"
-                  src="/clientes/aerolineas.png"
-                  width={90}
-                  height={90}
-                  alt="Aerolineas"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                {" "}
-                <Image
-                  className="invert"
-                  src="/clientes/aerolineas.png"
-                  width={90}
-                  height={90}
-                  alt="Aerolineas"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-              <div className="w-1/4 h-full bg-white border-[1px] border-neutral-300 rounded-xl flex items-center justify-center">
-                {" "}
-                <Image
-                  className="invert"
-                  src="/clientes/aerolineas.png"
-                  width={90}
-                  height={90}
-                  alt="Aerolineas"
-                  style={{
-                    width: "80%",
-                    height: "auto",
-                  }}
-                />
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
