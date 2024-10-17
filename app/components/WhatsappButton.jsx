@@ -1,24 +1,36 @@
 'use client';
-import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
-import { motion } from 'framer-motion';
 
-export default function WhatsappButton({ isVisible = true }) {
+import React, { useEffect } from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
+import { motion, AnimatePresence } from 'framer-motion';
+
+export default function WhatsappButton({ isVisible = false }) {
+  useEffect(() => {
+    console.log('WhatsappButton isVisible changed:', isVisible);
+  }, [isVisible]);
+
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 50 }}
-      exit={{ opacity: 0, y: 50 }}
-      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-      className="fixed bottom-5 right-5 z-30"
-    >
-      <motion.div
-        className="flex items-center gap-2 px-4 py-4 bg-white text-black border border-gray-300 rounded-full cursor-pointer transition-colors duration-300 ease-in-out hover:bg-green-500 hover:text-white"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <FaWhatsapp className="h-8 w-8 transition-transform duration-300 ease-out" />
-      </motion.div>
-    </motion.div>
+    <AnimatePresence>
+      {isVisible && (
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+          className="fixed bottom-5 right-5 z-50"
+        >
+          <motion.a
+            href="https://wa.me/numerodephone"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-4 bg-white hover:bg-green-500 hover:text-white border border-gray-300 text-black rounded-full cursor-pointer transition-colors duration-300 ease-in-out "
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaWhatsapp className="h-8 w-8 transition-transform duration-300 ease-out" />
+          </motion.a>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
