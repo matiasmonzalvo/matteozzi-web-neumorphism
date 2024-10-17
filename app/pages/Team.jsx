@@ -24,7 +24,7 @@ export default function Team() {
   return (
     <section
       id="team"
-      className="bg-white text-black p-4 sm:px-8 sm:pt-32 pb-8 relative overflow-hidden"
+      className="bg-white text-black p-4 sm:px-8 sm:pt-20 pb-8 relative overflow-hidden"
       data-scroll-section
     >
       <div className="lg:w-[80%] w-[90%] mx-auto relative z-10 py-6 sm:pt-16">
