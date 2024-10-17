@@ -5,10 +5,6 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function WhatsappButton({ isVisible = false }) {
-  useEffect(() => {
-    console.log('WhatsappButton isVisible changed:', isVisible);
-  }, [isVisible]);
-
   return (
     <AnimatePresence>
       {isVisible && (
