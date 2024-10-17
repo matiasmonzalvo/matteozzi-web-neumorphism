@@ -42,7 +42,7 @@ export default function Partners() {
           algunos de nuestros clientes más destacados.
         </p>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-4 mt-8 sm:mt-12 w-full">
+        <div className="w-full sm:w-[85%] grid grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-4 my-8 sm:my-12 ">
           {clients.map((client) => (
             <div
               key={client.name}
