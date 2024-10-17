@@ -62,8 +62,8 @@ const Hero = () => {
           Tu socio confiable para un éxito sin fronteras.
         </h1>
         <p className="w-full lg:w-[45%] text-sm lg:text-[1vw] leading-[1.3] text-gray-100 tracking-wider mt-4">
-          Simplificamos el comercio internacional a través de servicios
-          aduaneros, logísticos y asesoría estratégica.
+          Más de 50 años simplificando el comercio internacional a través de
+          servicios aduaneros, logísticos y asesoría estratégica.
         </p>
         <div className="mt-8 lg:mt-10">
           <a
