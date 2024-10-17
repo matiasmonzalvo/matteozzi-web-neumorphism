@@ -1,23 +1,23 @@
-"use client";
+'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
 
 const clients = [
-  { name: "Aerolineas", src: "/clientes/aerolineas.png" },
-  { name: "Coto", src: "/clientes/coto.png" },
-  { name: "CNEA", src: "/clientes/cnea.png" },
-  { name: "Lan", src: "/clientes/lan.png" },
-  { name: "Altec", src: "/clientes/altec.png" },
-  { name: "Abc Cargas", src: "/clientes/abccargas.png" },
-  { name: "Cruz del sur", src: "/clientes/cruzdelsur.png" },
-  { name: "Arsat", src: "/clientes/arsat.png" },
-  { name: "Llao Llao", src: "/clientes/llaollao.png" },
-  { name: "Cencosud", src: "/clientes/cencosud.png" },
-  { name: "Flybondi", src: "/clientes/flybondi.png" },
-  { name: "Invap", src: "/clientes/invap.png" },
-  { name: "Jet Smart", src: "/clientes/jetsmart.png" },
-  { name: "Latam", src: "/clientes/latam.png" },
-  { name: "YPF", src: "/clientes/ypf.png" },
+  { name: 'Aerolineas', src: '/clientes/aerolineas.png' },
+  { name: 'Coto', src: '/clientes/coto.png' },
+  { name: 'CNEA', src: '/clientes/cnea.png' },
+  { name: 'Lan', src: '/clientes/lan.png' },
+  { name: 'Altec', src: '/clientes/altec.png' },
+  { name: 'Abc Cargas', src: '/clientes/abccargas.png' },
+  { name: 'Cruz del sur', src: '/clientes/cruzdelsur.png' },
+  { name: 'Arsat', src: '/clientes/arsat.png' },
+  { name: 'Llao Llao', src: '/clientes/llaollao.png' },
+  { name: 'Cencosud', src: '/clientes/cencosud.png' },
+  { name: 'Flybondi', src: '/clientes/flybondi.png' },
+  { name: 'Invap', src: '/clientes/invap.png' },
+  { name: 'Jet Smart', src: '/clientes/jetsmart.png' },
+  { name: 'Latam', src: '/clientes/latam.png' },
+  { name: 'YPF', src: '/clientes/ypf.png' }
 ];
 
 export default function Partners() {
@@ -28,13 +28,13 @@ export default function Partners() {
       data-scroll-section
     >
       <div className="w-[90%] sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto sm:px-4 lg:px-8 flex flex-col items-center text-center">
-        <span className="text-xs sm:text-sm uppercase tracking-wider text-gray-600 py-1 px-3 border border-gray-600 rounded-xl mb-4">
+        <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
           Empresas que confían en nosotros
         </span>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+        <h1 className="text-3xl sm:text-[6.5vw] font-bold leading-tight sm:leading-[1]">
           Clientes
         </h1>
-        <p className="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] text-sm sm:text-base md:text-lg text-gray-600 mt-4 sm:mt-6">
+        <p className="text-sm lg:text-[0.9vw] text-gray-600 mt-4 sm:mt-4 md:w-[80%] lg:w-[60%]">
           Nuestra lista de clientes refleja la confianza en nuestra capacidad y
           calidad. Trabajamos directamente con equipos clave de cada
           organización y abarcamos distintos niveles de la industria,
@@ -55,9 +55,9 @@ export default function Partners() {
                 height={100}
                 alt={client.name}
                 style={{
-                  objectFit: "contain",
-                  width: "100%",
-                  height: "100%",
+                  objectFit: 'contain',
+                  width: '100%',
+                  height: '100%'
                 }}
               />
             </div>

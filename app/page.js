@@ -23,7 +23,7 @@ function ScrollHandler({ heroRef, setIsWhatsappVisible }) {
     if (heroRef.current) {
       const updateHeroHeight = () => {
         const height = heroRef.current.getBoundingClientRect().height;
-        setHeroHeight(height);
+        setHeroHeight(height - 800);
       };
 
       updateHeroHeight();
