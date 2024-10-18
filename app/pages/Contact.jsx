@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
+import SectionContainer from '../components/SectionContainter';
 
 const buttonMotionConfig = {
   whileHover: {
@@ -144,13 +145,9 @@ export default function Contact() {
   };
 
   return (
-    <section
-      id="contact"
-      className="bg-white text-black lg:p-4 relative overflow-hidden lg:py-32 pb-6"
-      data-scroll-section
-    >
+    <SectionContainer id="contact">
       {/* PRIMERA MITAD */}
-      <div className="flex flex-col lg:flex-row items-start justify-between h-full w-[90%] lg:w-[80%] mx-auto relative z-10">
+      <div className="flex flex-col lg:flex-row items-start justify-between">
         <div className="flex flex-col items-start justify-center lg:w-[50%] h-full">
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             Contacto
@@ -276,6 +273,6 @@ export default function Contact() {
           )}
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import SectionContainer from '../components/SectionContainter';
 
 const clients = [
   { name: 'Aerolineas', src: '/clientes/aerolineas.png' },
@@ -22,12 +23,8 @@ const clients = [
 
 export default function Partners() {
   return (
-    <section
-      id="clients"
-      className="bg-white text-black py-8 sm:py-12 md:py-16 relative min-h-screen"
-      data-scroll-section
-    >
-      <div className="w-[90%] sm:w-[90%] md:w-[85%] lg:w-[80%] mx-auto sm:px-4 lg:px-8 flex flex-col items-center text-center">
+    <SectionContainer id="clients">
+      <div className="flex flex-col items-center text-center">
         <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
           Empresas que confían en nosotros
         </span>
@@ -64,6 +61,6 @@ export default function Partners() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 }
