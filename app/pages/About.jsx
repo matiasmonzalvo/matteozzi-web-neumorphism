@@ -71,11 +71,9 @@ export default function About() {
             <Image
               src="/cargo.jpg"
               alt="Comercio Internacional"
-              layout="responsive"
-              width={16}
-              height={9}
-              objectFit="cover"
-              className="rounded-xl"
+              width={1600}
+              height={900}
+              className="rounded-xl object-cover"
             />
           </div>
           <Image
@@ -83,8 +81,7 @@ export default function About() {
             alt="Comercio Internacional"
             width={500}
             height={500}
-            objectFit="cover"
-            className="rounded-2xl hidden sm:block"
+            className="rounded-2xl hidden sm:block object-cover"
           />
         </div>
         {/* LADO DERECHO */}

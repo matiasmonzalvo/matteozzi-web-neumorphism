@@ -40,7 +40,7 @@ export default function Team() {
       <div className="team flex flex-col items-center justify-center mt-16 text-center">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-8 w-[90%] lg:w-[80%] text-center mt-16">
           {/* CARD1 */}
-          <div className="h-[400px]">
+          <div className="h-[400px] max-w-[400px] w-full mx-auto">
             <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-r from-[#DEE3CD] to-[#93bec7]">
               <img
                 src="/member3.png"
@@ -54,7 +54,7 @@ export default function Team() {
             </span>
           </div>
           {/* CARD2 */}
-          <div className="h-[400px]">
+          <div className="h-[400px] max-w-[400px] w-full mx-auto">
             <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-[#93bec7]">
               <img
                 src="/member2.png"
@@ -68,7 +68,7 @@ export default function Team() {
             </span>
           </div>
           {/* CARD3 */}
-          <div className="h-[400px]">
+          <div className="h-[400px] max-w-[400px] w-full mx-auto">
             <div className="relative flex flex-col h-[280px] rounded-2xl p-6 justify-between bg-gradient-to-r from-[#93bec7] to-[#46939f]">
               <img
                 src="/member4.png"

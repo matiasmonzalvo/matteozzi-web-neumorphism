@@ -46,7 +46,7 @@ export default function Partners() {
               className="flex items-center justify-center bg-white border border-gray-300 rounded-xl p-2 sm:p-4 aspect-square"
             >
               <Image
-                className="invert"
+                className="invert opacity-90"
                 src={client.src}
                 width={100}
                 height={100}
