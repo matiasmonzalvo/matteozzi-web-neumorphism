@@ -24,7 +24,7 @@ export default function Team() {
 
   return (
     <SectionContainer id="team">
-      <div className="team flex flex-col items-start justify-start w-full">
+      <div className="team flex flex-col items-start justify-start w-full pt-6 lg:pt-0">
         <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
           Team
         </span>
