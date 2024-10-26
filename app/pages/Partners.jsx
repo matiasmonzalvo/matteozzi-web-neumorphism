@@ -48,8 +48,8 @@ export default function Partners() {
               <Image
                 className="invert opacity-90"
                 src={client.src}
-                width={100}
-                height={100}
+                width={500}
+                height={500}
                 alt={client.name}
                 style={{
                   objectFit: 'contain',

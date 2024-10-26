@@ -44,8 +44,8 @@ export default function About() {
         {/* LADO IZQUIERDO */}
         <div
           className="about flex flex-col items-start justify-center w-full sm:w-[27.5%] "
-          data-scroll-speed="2"
-          data-scroll
+          // data-scroll-speed="2"
+          // data-scroll
         >
           <span className="text-[2.5vw] sm:text-sm uppercase tracking-wider text-gray-600 mb-4 py-1 px-3 border border-gray-600 rounded-xl">
             ¿Quienes Somos?
@@ -64,8 +64,8 @@ export default function About() {
         {/* FOTO */}
         <div
           className="about sm:absolute sm:inset-0 sm:-z-10 sm:flex sm:items-center sm:justify-center sm:w-[40%] sm:mx-auto"
-          data-scroll
-          data-scroll-speed="1"
+          // data-scroll
+          // data-scroll-speed="1"
         >
           <div className="w-full aspect-video mt-8 mb-8 sm:hidden">
             <Image
@@ -88,9 +88,9 @@ export default function About() {
         <div className="w-full sm:w-[27.5%] sm:absolute sm:right-0 sm:top-1/2 sm:transform sm:-translate-y-1/2">
           <div
             className="about space-y-6"
-            data-scroll
-            data-scroll-speed="-0.25"
-            data-scroll-direction="horizontal"
+            // data-scroll
+            // data-scroll-speed="-0.25"
+            // data-scroll-direction="horizontal"
           >
             {items.map((item, index, array) => (
               <div key={index}>

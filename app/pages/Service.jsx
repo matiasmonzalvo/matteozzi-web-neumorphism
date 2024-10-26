@@ -57,8 +57,8 @@ export default function Service() {
           {/* CARD1 */}
           <div
             className="service flex flex-col h-[400px] lg:h-[30vw] border border-gray-300 rounded-2xl py-8 px-6 hover:shadow-lg justify-between"
-            data-scroll
-            data-scroll-speed="0.6"
+            // data-scroll
+            // data-scroll-speed="0.6"
           >
             <div>
               <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
@@ -89,8 +89,8 @@ export default function Service() {
           {/* CARD2 */}
           <div
             className="service flex flex-col h-[400px] lg:h-[30vw] border border-gray-300 rounded-2xl py-8 px-6 hover:shadow-lg justify-between"
-            data-scroll
-            data-scroll-speed="0"
+            // data-scroll
+            // data-scroll-speed="0"
           >
             <div>
               <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
@@ -117,8 +117,8 @@ export default function Service() {
           {/* CARD3 */}
           <div
             className="service flex flex-col h-[400px] lg:h-[30vw] border border-gray-300 rounded-2xl py-8 px-6  hover:shadow-lg justify-between"
-            data-scroll
-            data-scroll-speed="-0.6"
+            // data-scroll
+            // data-scroll-speed="-0.6"
           >
             <div>
               <div className="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center mb-4">
